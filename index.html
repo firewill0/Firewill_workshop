@@ -19,8 +19,76 @@
 
 <body>
     <input type="checkbox" name="" id="menu_mobile_chk">
-    <div class="header_outer">
-
+    <input type="checkbox" name="" id="menu_language_pc_chk">
+    <input type="checkbox" name="" id="menu_language_m_chk">
+    <header class="header">
+        <div class="logo_img_pc">
+            <a href="./index.html">
+                <img src="./img/logo_bright.png" alt="">
+            </a>
+        </div>
+        <div class="gnb">
+            <div class="btn_login"><a href="#">로그인</a></div>
+            <div class="btn_logout"><a href="#">로그아웃</a></div>
+            <div class="btn_register"> <a href="#">회원가입</a></div>
+            <div class="box_search">
+                <input class="search" type="search" name="" id="">
+                <button class="btn_search" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="btn_language_area">
+                <label class="btn_language" for="menu_language_pc_chk">
+                    <img src="./img/globe_bright.png" alt="">
+                </label>
+                <div class="box_language_pc">
+                    <a href="#">한국어</a>
+                    <a href="#">English</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <input type="radio" name="tab_content_sns" id="content_sns_btn1" checked>
+    <input type="radio" name="tab_content_sns" id="content_sns_btn2">
+    <input type="checkbox" name="" id="menu_setting_pc_chk">
+    <div class="lnb_outer">
+        <div class="lnb_pc">
+            <div class="menu_pc">
+                <div class="btn_menu_news">
+                    <p class="stb">뉴스</p>
+                </div>
+                <div class="btn_menu_workshop">
+                    <p class="stb">워크샵</p>
+                </div>
+                <div class="btn_menu_forum">
+                    <a class="stb"
+                        href="https://forums.bohemia.net/forums/topic/180959-firewill-standalone-series-release-thread/"
+                        target="_blank">포럼</a>
+                </div>
+                <div class="btn_menu_download">
+                    <p class="stb">다운로드</p>
+                </div>
+                <div class="btn_menu_about">
+                    <p class="stb">소개</p>
+                </div>
+            </div>
+            <div class="lnb_profile">
+                <div class="profile_img">
+                    <img src="./img/profile_pic.png" alt="">
+                </div>
+                <div class="profile_text">
+                    Firewill
+                </div>
+                <label class="profile_btn_setting" for="menu_setting_pc_chk">
+                    <img src="./img/cogwheel_dark.png" alt="">
+                </label>
+            </div>
+            <div class="profile_option_box">
+                <p>웹 페이지 보기 모드</p>
+                <label for="content_sns_btn1">페일 애저(브라이트)</label>
+                <label for="content_sns_btn2">다크 블루(다크)</label>
+            </div>
+        </div>
     </div>
 
     <div class="header_mobile">
@@ -65,70 +133,88 @@
         </div>
     </section>
 
-    <section class="section_popular section_style">
-        <div class="title_popular title_big">인기 콘텐츠</div>
-        <div class="popular_list">
-            <a href="#">
-                <img class="img_popular" src="./img/f16_2.jpg" alt="">
-                <p class="text_popular">19만 구독자를 바라보는 F-16 모드, 미래에는?</p>
-            </a>
-            <a href="#">
-                <img class="img_popular" src="./img/c130h_usaf_crop.jpg" alt="">
-                <p class="text_popular">금주의 작업: C-130E USAF Euro One</p>
-            </a>
-            <a href="#">
-                <img class="img_popular" src="./img/f15ex_2_cropped.jpg" alt="">
-                <p class="text_popular">새로 나온 모드 - F-15EX Eagle II</p>
-            </a>
-            <a href="#">
-                <img class="img_popular" src="./img/itgt.jpg" alt="">
-                <p class="text_popular">튜토리얼 - I-TGT 사용법</p>
-            </a>
-        </div>
-    </section>
+    <div class="wrap_content_main">
+        <div class="content_main_left">
+            <section class="section_popular section_style">
+                <div class="title_popular title_big">인기 콘텐츠</div>
+                <div class="popular_list">
+                    <a href="#">
+                        <img class="img_popular" src="./img/f16_2.jpg" alt="">
+                        <p class="text_popular">19만 구독자를 바라보는 F-16 모드, 미래에는?</p>
+                    </a>
+                    <a href="#">
+                        <img class="img_popular" src="./img/c130h_usaf_crop.jpg" alt="">
+                        <p class="text_popular">금주의 작업: C-130E USAF Euro One</p>
+                    </a>
+                    <a href="#">
+                        <img class="img_popular" src="./img/f15ex_2_cropped.jpg" alt="">
+                        <p class="text_popular">새로 나온 모드 - F-15EX Eagle II</p>
+                    </a>
+                    <a href="#">
+                        <img class="img_popular" src="./img/itgt.jpg" alt="">
+                        <p class="text_popular">튜토리얼 - I-TGT 사용법</p>
+                    </a>
+                </div>
+            </section>
 
-    <section class="section_last_report section_style">
-        <div class="title_last_report title_big">최신 작업 보고</div>
-        <img class="img_last_report" src="./img/wip_c130h.jpg" alt="">
-        <div class="last_report_desc">
-            <p class="title_sub_last_report title_sub">금주의 작업 : C-130H 한국 공군 타입</p>
-            <p class="text_last_report text_desc">이번 주의 작업 보고에서는 C-130H 한국 공군 사양에 대한 소개와 작업한 결과에 대해서 다루고자 합니다.</p>
-            <a class="moreBtn" href="#">자세히 보기</a>
-        </div>
-    </section>
-
-    <section class="section_news_latest section_style">
-        <div class="title_news_latest title_big">소식</div>
-        <img class="img_news_latest" src="./img/f16_1.jpg" alt="">
-        <div class="news_latest_desc">
-            <p class="title_sub_news_latest title_sub">19만 구독자를 바라보는 F-16모드, 미래에는?</p>
-            <a class="moreBtn" href="#">자세히 보기</a>
+            <section class="section_last_report section_style">
+                <div class="title_last_report title_big">최신 작업 보고</div>
+                <img class="img_last_report" src="./img/wip_c130h.jpg" alt="">
+                <div class="last_report_desc">
+                    <p class="title_sub_last_report title_sub">금주의 작업 : C-130H 한국 공군 타입</p>
+                    <p class="text_last_report text_desc">이번 주의 작업 보고에서는 C-130H 한국 공군 사양에 대한 소개와 작업한 결과에 대해서 다루고자 합니다.
+                    </p>
+                    <a class="moreBtn" href="#">자세히 보기</a>
+                </div>
+            </section>
         </div>
 
-        <div class="title_news_more title_sub">관심가질 만한 소식</div>
-        <div class="news_more_area">
-            <div>
-                <img class="img_news_more" src="./img/sumava.jpg" alt="">
-                <p class="title_sub_news_more">신규 모드 지도, Sumava 출시</p>
-                <p class="text_news_more text_small">게임 뉴스</p>
-            </div>
-            <div>
-                <img class="img_news_more" src="./img/update.jpg" alt="">
-                <p class="title_sub_news_more">FIR AWS 업데이트 예정</p>
-                <p class="text_news_more text_small">모드 뉴스</p>
-            </div>
-            <div>
-                <img class="img_news_more" src="./img/zomboid.jpg" alt="">
-                <p class="title_sub_news_more">Playthrough : Project Zomboid</p>
-                <p class="text_news_more text_small">기타 뉴스</p>
-            </div>
-            <div>
-                <img class="img_news_more" src="./img/c130e.jpg" alt="">
-                <p class="title_sub_news_more">개발 리포트 #1 : C-130 자료 조사</p>
-                <p class="text_news_more text_small">개발 리포트</p>
-            </div>
+        <div class="content_main_right">
+            <section class="section_news_latest section_style">
+                <div class="title_news_latest title_big">소식</div>
+                <img class="img_news_latest" src="./img/f16_1.jpg" alt="">
+                <div class="news_latest_desc">
+                    <p class="title_sub_news_latest title_sub">19만 구독자를 바라보는 F-16모드, 미래에는?</p>
+                    <a class="moreBtn" href="#">자세히 보기</a>
+                </div>
+
+                <div class="title_news_more title_sub">관심가질 만한 소식</div>
+                <div class="news_more_area">
+                    <div>
+                        <img class="img_news_more" src="./img/sumava.jpg" alt="">
+                        <div class="box_news_more">
+                            <p class="title_sub_news_more">신규 모드 지도, Sumava 출시</p>
+                            <p class="text_news_more text_small">게임 뉴스</p>
+                        </div>
+
+                    </div>
+                    <div>
+                        <img class="img_news_more" src="./img/update.jpg" alt="">
+                        <div class="box_news_more">
+                            <p class="title_sub_news_more">FIR AWS 업데이트 예정</p>
+                            <p class="text_news_more text_small">모드 뉴스</p>
+                        </div>
+
+                    </div>
+                    <div>
+                        <img class="img_news_more" src="./img/zomboid.jpg" alt="">
+                        <div class="box_news_more">
+                            <p class="title_sub_news_more">Playthrough : Project Zomboid</p>
+                            <p class="text_news_more text_small">기타 뉴스</p>
+                        </div>
+
+                    </div>
+                    <div>
+                        <img class="img_news_more" src="./img/c130e.jpg" alt="">
+                        <div class="box_news_more">
+                            <p class="title_sub_news_more">개발 리포트 #1 : C-130 자료 조사</p>
+                            <p class="text_news_more text_small">개발 리포트</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
 
     <input type="checkbox" name="" id="menu_mobile_news_chk">
     <input type="checkbox" name="" id="menu_mobile_workshop_chk">
@@ -198,45 +284,109 @@
                     <a href="#">기타 이야기 <i class="fas fa-caret-right"></i></a>
                 </div>
             </label>
-            <div class="btn_menu_forum_m btn_menu_m_common">
+            <a class="btn_menu_m_common"
+                href="https://forums.bohemia.net/forums/topic/180959-firewill-standalone-series-release-thread/"
+                target="_blank">
+                <div class="btn_menu_forum_m">
+                    <p>포럼</p>
+                    <i class="fas fa-caret-right"></i>
+                </div>
+
+            </a>
+            <!-- <div class="btn_menu_forum_m btn_menu_m_common">
                 <a href="#">포럼</a>
-                <i class="fas fa-caret-right"></i>
-            </div>
+                <i class="fas fa-caret-right"></i> -->
+        </div>
         </div>
     </aside> <!-- wing_menu_mobile -->
 
 
     <input type="checkbox" name="" id="footer_mobile_check">
+    <input type="checkbox" name="" id="sitemap_pc_check">
     <div class="footer_outer">
         <footer class="footer">
-            <div class="footer_logo_img">
-                <img src="./img/logo_small_dark.png" alt="">
-            </div>
-            <p class="footer_copyright">Copyright ⓒ Firewill Workshop all rights reserved.</p>
-            <div class="footer_sns_mobile">
-                <label for="footer_mobile_check" class="btn_footer_mobile">
-                    <img class="footer_mobile_open" src="./img/btn_bottom_open_dark.png" alt="">
-                </label>
-                <div class="footer_sns_list">
-                    <a href="https://github.com/firewill0/FIR_AWS_SystemDevelopment" target="_blank">
-                        <img src="./img/btn_github_bright.png" alt="">
-                    </a>
-                    <a href="https://discord.com/" target="_blank">
-                        <img src="./img/btn_discord_bright.png" alt="">
-                    </a>
-                    <a href="line_invite.html"
-                        target="_blank">
-                        <img src="./img/btn_line_bright.png" alt="">
-                    </a>
-                    <a href="https://www.youtube.com/@firewill0" target="_blank">
-                        <img src="./img/btn_yt_bright.png" alt="">
-                    </a>
-                    <label for="footer_mobile_check" class="btn_footer_mobile_close">
-                        <img class="footer_mobile_close" src="./img/btn_bottom_close_dark.png" alt="">
-                    </label>
+            <div class="footer_left">
+                <div class="footer_logo_img">
+                    <img src="./img/logo_small_dark.png" alt="">
                 </div>
+                <p class="footer_copyright">Copyright ⓒ Firewill Workshop all rights reserved.</p>
             </div>
 
+            <div class="footer_right">
+                <div class="footer_sns_mobile">
+                    <label for="footer_mobile_check" class="btn_footer_mobile">
+                        <img class="footer_mobile_open" src="./img/btn_bottom_open_dark.png" alt="">
+                    </label>
+                    <div class="footer_sns_list">
+                        <a href="https://github.com/firewill0/FIR_AWS_SystemDevelopment" target="_blank">
+                            <img src="./img/btn_github_bright.png" alt="">
+                        </a>
+                        <a href="https://discord.com/" target="_blank">
+                            <img src="./img/btn_discord_bright.png" alt="">
+                        </a>
+                        <a href="line_invite.html" target="_blank">
+                            <img src="./img/btn_line_bright.png" alt="">
+                        </a>
+                        <a href="https://www.youtube.com/@firewill0" target="_blank">
+                            <img src="./img/btn_yt_bright.png" alt="">
+                        </a>
+                        <label for="footer_mobile_check" class="btn_footer_mobile_close">
+                            <img class="footer_mobile_close" src="./img/btn_bottom_close_dark.png" alt="">
+                        </label>
+                    </div>
+                </div>
+                <div class="sitemap_pc">
+                    <label class="sitemap" for="sitemap_pc_check">
+                        <p>사이트맵</p>
+                    </label>
+                    <div class="sitemap_list">
+                        <div>
+                            <p class="title_bold">뉴스</p>
+                            <a href="#">게임 뉴스</a>
+                            <a href="#">모드 뉴스</a>
+                            <a href="#">개발 리포트</a>
+                            <a href="#">기타 뉴스</a>
+                        </div>
+                        <div>
+                            <p class="title_bold">작업실</p>
+                            <a href="#">프로젝트</a>
+                            <a href="#">작업보고</a>
+                            <a href="#">튜토리얼</a>
+                        </div>
+                        <div>
+                            <p class="title_bold">다운로드</p>
+                            <a href="#">모드</a>
+                            <a href="#">스킨 템플릿</a>
+                            <a href="#">월페이퍼</a>
+                        </div>
+                        <div>
+                            <p class="title_bold">소개</p>
+                            <a href="#">제작자 소개</a>
+                            <a href="#">팀원 소개</a>
+                            <a href="#">근황</a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <p class="title_bold">포럼</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_sns">
+                    <a href="https://github.com/firewill0/FIR_AWS_SystemDevelopment" target="_blank">
+                        <img src="./img/github_dark.png" alt="">
+                    </a>
+                    <a href="https://discord.com/" target="_blank">
+                        <img src="./img/discord_dark.png" alt="">
+                    </a>
+                    <a href="line_invite.html" target="_blank">
+                        <img src="./img/line_dark.png" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/@firewill0" target="_blank">
+                        <img src="./img/youtube_dark.png" alt="">
+                    </a>
+                </div>
+            </div>
         </footer>
     </div>
 
