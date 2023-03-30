@@ -48,17 +48,28 @@
             </div>
         </div>
     </header>
-    <input type="radio" name="tab_content_sns" id="content_sns_btn1" checked>
-    <input type="radio" name="tab_content_sns" id="content_sns_btn2">
+    <input type="radio" name="tab_content_color" id="content_color_btn1" checked>
+    <input type="radio" name="tab_content_color" id="content_color_btn2">
     <input type="checkbox" name="" id="menu_setting_pc_chk">
     <div class="lnb_outer">
         <div class="lnb_pc">
             <div class="menu_pc">
                 <div class="btn_menu_news">
                     <p class="stb">뉴스</p>
+                    <div class="menu_pc_sub menu_pc_sub_news">
+                        <a href="#">게임 뉴스</a>
+                        <a href="#">모드 뉴스</a>
+                        <a href="#">개발 리포트</a>
+                        <a href="#">기타 뉴스</a>
+                    </div>
                 </div>
                 <div class="btn_menu_workshop">
                     <p class="stb">워크샵</p>
+                    <div class="menu_pc_sub menu_pc_sub_workshop">
+                        <a href="#">프로젝트</a>
+                        <a href="#">작업 보고</a>
+                        <a href="#">튜토리얼</a>
+                    </div>
                 </div>
                 <div class="btn_menu_forum">
                     <a class="stb"
@@ -67,9 +78,19 @@
                 </div>
                 <div class="btn_menu_download">
                     <p class="stb">다운로드</p>
+                    <div class="menu_pc_sub menu_pc_sub_download">
+                        <a href="#">모드 다운로드</a>
+                        <a href="#">스킨 템플릿</a>
+                        <a href="#">월페이퍼</a>
+                    </div>
                 </div>
                 <div class="btn_menu_about">
                     <p class="stb">소개</p>
+                    <div class="menu_pc_sub menu_pc_sub_about">
+                        <a href="#">제작자 소개</a>
+                        <a href="#">팀원 소개</a>
+                        <a href="#">근황</a>
+                    </div>
                 </div>
             </div>
             <div class="lnb_profile">
@@ -84,9 +105,9 @@
                 </label>
             </div>
             <div class="profile_option_box">
-                <p>웹 페이지 보기 모드</p>
-                <label for="content_sns_btn1">페일 애저(브라이트)</label>
-                <label for="content_sns_btn2">다크 블루(다크)</label>
+                <p class="profile_setting_title">웹 페이지 보기 모드</p>
+                <label for="content_color_btn1">페일 애저(브라이트)</label>
+                <label for="content_color_btn2">다크 블루(다크)</label>
             </div>
         </div>
     </div>
@@ -186,7 +207,6 @@
                             <p class="title_sub_news_more">신규 모드 지도, Sumava 출시</p>
                             <p class="text_news_more text_small">게임 뉴스</p>
                         </div>
-
                     </div>
                     <div>
                         <img class="img_news_more" src="./img/update.jpg" alt="">
