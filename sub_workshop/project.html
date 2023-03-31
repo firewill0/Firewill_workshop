@@ -6,7 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/main.css">
+    <!-- 작업용 - 완료시 삭제 -->
+    <style>
+        .wip_page_notice {
+            width: 30%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +24,7 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
-    <title>Firewill Workshop</title>
+    <title>Projects</title>
 </head>
 
 <body>
@@ -28,7 +37,7 @@
         <input type="checkbox" name="" id="menu_language_m_chk">
         <header class="header">
             <div class="logo_img_pc">
-                <a href="./index.html">
+                <a href="../index.html">
                     <img alt="">
                 </a>
             </div>
@@ -87,7 +96,7 @@
                     <div class="btn_menu_workshop">
                         <p class="stb">작업실</p>
                         <div class="menu_pc_sub menu_pc_sub_workshop">
-                            <a href="./sub_workshop/project.html">프로젝트</a>
+                            <a href="#">프로젝트</a>
                             <a href="#">작업 보고</a>
                             <a href="#">튜토리얼</a>
                         </div>
@@ -116,13 +125,13 @@
                 </div>
                 <div class="lnb_profile">
                     <div class="profile_img">
-                        <img src="./img/profile_pic.png" alt="">
+                        <img src="../img/profile_pic.png" alt="">
                     </div>
                     <div class="profile_text">
                         Firewill
                     </div>
                     <label class="profile_btn_setting" for="menu_setting_pc_chk">
-                        <img src="./img/cogwheel_dark.png" alt="">
+                        <img src="../img/cogwheel_dark.png" alt="">
                     </label>
                 </div>
                 <div class="profile_option_box">
@@ -135,7 +144,7 @@
 
         <div class="header_mobile">
             <div class="logo_img">
-                <img src="./img/logo_dark.png" alt="">
+                <img src="../img/logo_dark.png" alt="">
             </div>
             <label for="menu_mobile_chk" class="btn_menu_mobile">
                 <!-- <img src="./img/ham_bright.jpg" alt=""> -->
@@ -143,119 +152,16 @@
             </label>
         </div>
 
-        <div class="visual_banner_main_wrap">
-            <div class="visual_banner_main">
-                <div><img src="./img/f14_ac2.jpg" alt=""></div>
-                <div><img src="./img/f15ex.jpg" alt=""></div>
-                <div><img src="./img/ea6b.jpg" alt=""></div>
-                <div><img src="./img/f16_1.jpg" alt=""></div>
-                <div><img src="./img/f22.jpg" alt=""></div>
-            </div>
-            <div class="slick_control">
-                <button class="btn_play">Play</button>
-                <button class="btn_pause">Pause</button>
-            </div>
-        </div>
-
-        <section class="section_quick_cat section_style">
-            <div class="title_quick_cat title_big change_color_txt_title">자주찾는 카테고리</div>
-            <div class="quick_cat_list">
-                <a href="./sub_workshop/project.html">
-                    <img class="img_quick_cat" src="./img/quickmenu_news.jpg" alt="">
-                    <p class="text_quick_cat">프로젝트</p>
-                </a>
-                <a href="#">
-                    <img class="img_quick_cat" src="./img/quickmenu_wip.jpg" alt="">
-                    <p class="text_quick_cat">작업보고</p>
-                </a>
-                <a href="#">
-                    <img class="img_quick_cat" src="./img/quickmenu_tutoria.jpg" alt="">
-                    <p class="text_quick_cat">튜토리얼</p>
-                </a>
-            </div>
+        <!-- 임시용. 작업 완료시 삭제 -->
+        <section class="wip_page_notice">
+            <h1 class="change_color_txt_title">현재 작업중인 페이지입니다.</h1>
+            <a href="../index.html">
+                <img src="../img/WIP_cat.jpg" alt="">
+            </a>
+            <p class="change_color_txt">(고양이 그림을 누르면 인덱스로 돌아갑니다.)</p>
+            <p class="change_color_txt">이 페이지는 현재 작업중에 있습니다.</p>
+            <p class="change_color_txt">최대한 빨리 작업을 완료하도록 하겠습니다.</p>
         </section>
-
-        <div class="wrap_content_main">
-            <div class="content_main_left">
-                <section class="section_popular section_style">
-                    <div class="title_popular title_big change_color_txt_title">인기 콘텐츠</div>
-                    <div class="popular_list">
-                        <a href="#">
-                            <img class="img_popular" src="./img/f16_2.jpg" alt="">
-                            <p class="text_popular">19만 구독자를 바라보는 F-16 모드, 미래에는?</p>
-                        </a>
-                        <a href="#">
-                            <img class="img_popular" src="./img/c130h_usaf_crop.jpg" alt="">
-                            <p class="text_popular">금주의 작업: C-130E USAF Euro One</p>
-                        </a>
-                        <a href="#">
-                            <img class="img_popular" src="./img/f15ex_2_cropped.jpg" alt="">
-                            <p class="text_popular">새로 나온 모드 - F-15EX Eagle II</p>
-                        </a>
-                        <a href="#">
-                            <img class="img_popular" src="./img/itgt.jpg" alt="">
-                            <p class="text_popular">튜토리얼 - I-TGT 사용법</p>
-                        </a>
-                    </div>
-                </section>
-
-                <section class="section_last_report section_style">
-                    <div class="title_last_report title_big change_color_txt_title">최신 작업 보고</div>
-                    <img class="img_last_report" src="./img/wip_c130h.jpg" alt="">
-                    <div class="last_report_desc">
-                        <p class="title_sub_last_report title_sub change_color_txt_title">금주의 작업 : C-130H 한국 공군 타입</p>
-                        <p class="text_last_report text_desc change_color_txt">이번 주의 작업 보고에서는 C-130H 한국 공군 사양에 대한 소개와
-                            작업한 결과에 대해서 다루고자
-                            합니다.
-                        </p>
-                        <a class="moreBtn" href="#">자세히 보기</a>
-                    </div>
-                </section>
-            </div>
-
-            <div class="content_main_right">
-                <section class="section_news_latest section_style">
-                    <div class="title_news_latest title_big change_color_txt_title">소식</div>
-                    <img class="img_news_latest" src="./img/f16_1.jpg" alt="">
-                    <div class="news_latest_desc">
-                        <p class="title_sub_news_latest title_sub change_color_txt">19만 구독자를 바라보는 F-16모드, 미래에는?</p>
-                        <a class="moreBtn" href="#">자세히 보기</a>
-                    </div>
-
-                    <div class="title_news_more title_sub change_color_txt_title">관심가질 만한 소식</div>
-                    <div class="news_more_area">
-                        <a class="change_color_outline" href="#">
-                            <img class="img_news_more" src="./img/sumava.jpg" alt="">
-                            <div class="box_news_more">
-                                <p class="title_sub_news_more change_color_txt">신규 모드 지도, Sumava 출시</p>
-                                <p class="text_news_more text_small change_color_txt">게임 뉴스</p>
-                            </div>
-                        </a>
-                        <a class="change_color_outline" href="#">
-                            <img class="img_news_more" src="./img/update.jpg" alt="">
-                            <div class="box_news_more">
-                                <p class="title_sub_news_more change_color_txt">FIR AWS 업데이트 예정</p>
-                                <p class="text_news_more text_small change_color_txt">모드 뉴스</p>
-                            </div>
-                        </a>
-                        <a class="change_color_outline" href="#">
-                            <img class="img_news_more" src="./img/zomboid.jpg" alt="">
-                            <div class="box_news_more">
-                                <p class="title_sub_news_more change_color_txt">Playthrough : Project Zomboid</p>
-                                <p class="text_news_more text_small change_color_txt">기타 뉴스</p>
-                            </div>
-                        </a>
-                        <a class="change_color_outline" href="#">
-                            <img class="img_news_more" src="./img/c130e.jpg" alt="">
-                            <div class="box_news_more">
-                                <p class="title_sub_news_more change_color_txt">개발 리포트 #1 : C-130 자료 조사</p>
-                                <p class="text_news_more text_small change_color_txt" id="target">개발 리포트</p>
-                            </div>
-                        </a>
-                    </div>
-                </section>
-            </div>
-        </div>
 
         <input type="checkbox" name="" id="menu_mobile_news_chk">
         <input type="checkbox" name="" id="menu_mobile_workshop_chk">
@@ -264,14 +170,14 @@
         <aside class="wing_menu_mobile">
             <div class="box_menu_m_top">
                 <div class="box_menu_m_top_l">
-                    <img class="img_profile_m" src="./img/profile_pic.png" alt="">
+                    <img class="img_profile_m" src="../img/profile_pic.png" alt="">
                     <p class="text_profile_m">Firewill</p>
                 </div>
                 <div class="box_menu_m_top_r">
                     <label class="btn_profile_setting_m btn_mobile" for="menu_setting_m_chk">
-                        <img class="" src="./img/cogwheel_dark.png" alt="">
+                        <img class="" src="../img/cogwheel_dark.png" alt="">
                     </label>
-                    <img class="btn_logout_m btn_mobile" src="./img/logout_dark.png" alt="">
+                    <img class="btn_logout_m btn_mobile" src="../img/logout_dark.png" alt="">
                 </div>
                 <div class="profile_option_box_m">
                     <p class="profile_setting_title">웹 페이지 보기 모드</p>
@@ -285,7 +191,7 @@
                     <i class="fas fa-search"></i>
                 </button>
                 <label for="menu_language_m_chk" class="language_m btn_mobile">
-                    <img src="./img/globe_dark.png" alt="">
+                    <img src="../img/globe_dark.png" alt="">
                 </label>
                 <div class="box_language_m">
                     <a href="#">
@@ -315,7 +221,7 @@
                         <i class="fas fa-caret-down"></i>
                     </div>
                     <div class="menu_mobile">
-                        <a href="./sub_workshop/project.html">프로젝트 <i class="fas fa-caret-right"></i></a>
+                        <a href="#">프로젝트 <i class="fas fa-caret-right"></i></a>
                         <a href="#">작업보고 <i class="fas fa-caret-right"></i></a>
                         <a href="#">튜토리얼 <i class="fas fa-caret-right"></i></a>
                     </div>
@@ -360,7 +266,7 @@
             <footer class="footer">
                 <div class="footer_left">
                     <div class="footer_logo_img">
-                        <img src="./img/logo_small_dark.png" alt="">
+                        <img src="../img/logo_small_dark.png" alt="">
                     </div>
                     <p class="footer_copyright">Copyright ⓒ Firewill Workshop all rights reserved.</p>
                 </div>
@@ -368,23 +274,23 @@
                 <div class="footer_right">
                     <div class="footer_sns_mobile">
                         <label for="footer_mobile_check" class="btn_footer_mobile">
-                            <img class="footer_mobile_open" src="./img/btn_bottom_open_dark.png" alt="">
+                            <img class="footer_mobile_open" src="../img/btn_bottom_open_dark.png" alt="">
                         </label>
                         <div class="footer_sns_list">
                             <a href="https://github.com/firewill0/FIR_AWS_SystemDevelopment" target="_blank">
-                                <img src="./img/btn_github_bright.png" alt="">
+                                <img src="../img/btn_github_bright.png" alt="">
                             </a>
                             <a href="https://discord.com/" target="_blank">
-                                <img src="./img/btn_discord_bright.png" alt="">
+                                <img src="../img/btn_discord_bright.png" alt="">
                             </a>
                             <a href="line_invite.html" target="_blank">
-                                <img src="./img/btn_line_bright.png" alt="">
+                                <img src="../img/btn_line_bright.png" alt="">
                             </a>
                             <a href="https://www.youtube.com/@firewill0" target="_blank">
-                                <img src="./img/btn_yt_bright.png" alt="">
+                                <img src="../img/btn_yt_bright.png" alt="">
                             </a>
                             <label for="footer_mobile_check" class="btn_footer_mobile_close">
-                                <img class="footer_mobile_close" src="./img/btn_bottom_close_dark.png" alt="">
+                                <img class="footer_mobile_close" src="../img/btn_bottom_close_dark.png" alt="">
                             </label>
                         </div>
                     </div>
@@ -427,16 +333,16 @@
                     </div>
                     <div class="footer_sns">
                         <a href="https://github.com/firewill0/FIR_AWS_SystemDevelopment" target="_blank">
-                            <img src="./img/github_dark.png" alt="">
+                            <img src="../img/github_dark.png" alt="">
                         </a>
                         <a href="https://discord.com/" target="_blank">
-                            <img src="./img/discord_dark.png" alt="">
+                            <img src="../img/discord_dark.png" alt="">
                         </a>
                         <a href="line_invite.html" target="_blank">
-                            <img src="./img/line_dark.png" alt="">
+                            <img src="../img/line_dark.png" alt="">
                         </a>
                         <a href="https://www.youtube.com/@firewill0" target="_blank">
-                            <img src="./img/youtube_dark.png" alt="">
+                            <img src="../img/youtube_dark.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -452,22 +358,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
     </script>
     <script>
-        $('.visual_banner_main').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            autoplay: true,
-            autoplaySpeed: 2000
-        });
-
-        $('.btn_pause').on('click', function () {
-            $('.visual_banner_main').slick('slickPause');
-        });
-
-        $('.btn_play').on('click', function () {
-            $('.visual_banner_main').slick('slickPlay');
-        });
 
         const target = document.getElementById("target");
 

@@ -10,9 +10,23 @@ html {
 }
 
 .body {
+    position: relative;
     font-size: 16px;
     background-color: #f0ffff;
     font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.change_color_txt_title {
+    color: #001d3b;
+}
+
+.change_color_txt {
+    color: #001d3b;
+}
+
+.change_color_outline {
+    border-color: #001d3b;
 }
 
 li {
@@ -33,13 +47,10 @@ img {
     font-size: 2rem;
     text-align: center;
     font-weight: bold;
-    color: #001d3b;
     margin-bottom: 15px;
 }
 
 .section_style {
-    /* width: calc(100% - 30px);
-    margin: 0 auto; */
     margin-top: 30px;
 }
 
@@ -82,8 +93,29 @@ img {
     line-height: 50px;
     margin: 0 auto;
     font-size: 0.9rem;
-
 }
+
+.btn_top {
+    position: fixed;
+    right: 15px;
+    bottom: 120px;
+    transition: 0.2s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.btn_top>a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: #00458A;
+    text-align: center;
+    line-height: 45px;
+    color: #f0ffff;
+}
+
+/* common part end */
 
 .header {
     display: none;
@@ -122,6 +154,7 @@ img {
     top: 7px;
     border: 0;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .btn_login {
@@ -231,6 +264,14 @@ img {
     text-decoration: underline;
 }
 
+#menu_setting_pc_chk,
+#menu_setting_m_chk,
+#content_color_btn1,
+#content_color_btn2 {
+    display: none;
+}
+
+
 .lnb_profile {
     width: 200px;
     height: 60px;
@@ -261,8 +302,6 @@ img {
     cursor: pointer;
 }
 
-
-
 .profile_option_box {
     position: absolute;
     right: 0;
@@ -290,11 +329,30 @@ img {
     display: block;
 }
 
-#menu_setting_pc_chk,
-#content_color_btn1,
-#content_color_btn2 {
-    display: none;
+.profile_option_box_m {
+    position: absolute;
+    right: 26px;
+    top: 52px;
+    width: 200px;
+    height: 0px;
+    background-color: #00458A;
+    z-index: 9999;
+    color: #f0ffff;
+    padding-left: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: 0.3s;
 }
+
+.profile_option_box_m>label {
+    cursor: pointer;
+    display: block;
+}
+
+#menu_setting_m_chk:checked~.wing_menu_mobile .profile_option_box_m {
+    height: 90px;
+}
+
 
 #menu_setting_pc_chk:checked~.lnb_outer .lnb_pc .profile_option_box {
     height: 90px;
@@ -304,10 +362,42 @@ img {
     rotate: 360deg;
 }
 
+.language_m {
+    cursor: pointer;
+}
+
+.box_language_m {
+    position: absolute;
+    width: 100px;
+    height: 0px;
+    visibility: hidden;
+    background-color: #0080FF;
+    border: 1px solid #001d3b;
+    box-sizing: border-box;
+    right: -101px;
+    top: 3px;
+    z-index: 1000;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-left: 5px;
+}
+
+.box_language_m>a {
+    display: block;
+    margin-bottom: 5px;
+}
 
 #menu_language_m_chk {
     display: none;
 }
+
+#menu_language_m_chk:checked~.wing_menu_mobile .box_language_m {
+    visibility: visible;
+    height: 55px;
+}
+
+
+
 
 .header_mobile {
     background-color: #001d3b;
@@ -398,6 +488,7 @@ label.btn_menu_mobile {
 .box_menu_m_top {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .box_menu_m_top_l,
@@ -430,12 +521,14 @@ label.btn_menu_mobile {
 .btn_logout_m {
     padding-right: 15px;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .box_menu_m_center {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .search_m {
@@ -449,6 +542,7 @@ label.btn_menu_mobile {
     border-style: none;
     background-color: #f0ffff;
     font-size: 1.2rem;
+    cursor: pointer;
 
 }
 
@@ -733,12 +827,17 @@ label.btn_menu_mobile {
     width: calc(50% - 8px);
     margin-right: 15px;
     margin-bottom: 15px;
-    border: 1px solid #001d3b;
+    border-width: 1px;
+    border-style: solid;
     box-sizing: border-box;
 }
 
 .news_more_area>a:hover {
     border-color: #0080FF;
+    color: #0080FF;
+}
+
+.news_more_area>a:hover .change_color_txt {
     color: #0080FF;
 }
 
@@ -935,6 +1034,7 @@ label.btn_menu_mobile {
         display: block;
         margin-bottom: 0;
         border: 1px solid #001d3b;
+        color: #001d3b;
         box-sizing: border-box;
     }
 
@@ -1108,6 +1208,10 @@ label.btn_menu_mobile {
     color: #f0ffff;
 }
 
+/* #content_color_btn2:checked~.body .wing_menu_mobile a:hover {
+    color: #00458A;
+} */
+
 #content_color_btn2:checked~.body .logo_img_pc img {
     content: url('../img/logo_dark.png');
 }
@@ -1126,24 +1230,65 @@ label.btn_menu_mobile {
 
 #content_color_btn2:checked~.body .menu_pc_sub {
     background-color: #00458A;
-    
-}
 
+}
 
 #content_color_btn2:checked~.body .slick-dots li button {
     background-color: #00458A;
 }
 
-#content_color_btn2:checked~.body .slick-dots li.slick-active button  {
-    background-color: #f0ffff;
+#content_color_btn2:checked~.body .slick-dots li.slick-active button {
+    background-color: #89C4FF;
 }
 
-#content_color_btn2:checked~.body .btn_play:after   {
+#content_color_btn2:checked~.body .btn_play:after {
+    color: #89C4FF;
+}
+
+#content_color_btn2:checked~.body .btn_pause:after {
+    color: #89C4FF;
+}
+
+#content_color_btn2:checked~.body .change_color_txt {
+    color: #89C4FF;
+}
+
+#content_color_btn2:checked~.body .change_color_txt_title {
     color: #f0ffff;
 }
 
-#content_color_btn2:checked~.body .btn_pause:after  {
-    color: #f0ffff;
+#content_color_btn2:checked~.body .popular_list>a {
+    border: 1px solid #89C4FF;
+    color: #89C4FF;
+}
+
+#content_color_btn2:checked~.body .popular_list>a:hover {
+    border: 1px solid #0080FF;
+    color: #0080FF;
+}
+
+#content_color_btn2:checked~.body .quick_cat_list>a>p {
+    color: #89C4FF;
+}
+
+#content_color_btn2:checked~.body .quick_cat_list>a:hover>p {
+    color: #0080FF;
+}
+
+#content_color_btn2:checked~.body .news_more_area>a.change_color_outline {
+    border-color: #89C4FF;
+}
+
+#content_color_btn2:checked~.body .news_more_area>a:hover.change_color_outline {
+    border-color: #0080FF;
+}
+
+#content_color_btn2:checked~.body .news_more_area>a:hover .change_color_txt {
+    color: #0080FF;
 }
 
 /* dark mode end */
+
+.text_const {
+    color: #001d3b;
+}
