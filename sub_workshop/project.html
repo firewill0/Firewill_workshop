@@ -6,16 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- 작업용 - 완료시 삭제 -->
-    <style>
-        .wip_page_notice {
-            width: 30%;
-            margin: 0 auto;
-            text-align: center;
-        }
-    </style>
-
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -152,21 +144,186 @@
             </label>
         </div>
 
-        <!-- 임시용. 작업 완료시 삭제 -->
-        <section class="wip_page_notice">
-            <h1 class="change_color_txt_title">현재 작업중인 페이지입니다.</h1>
-            <a href="../index.html">
-                <img src="../img/WIP_cat.jpg" alt="">
-            </a>
-            <p class="change_color_txt">(고양이 그림을 누르면 인덱스로 돌아갑니다.)</p>
-            <p class="change_color_txt">이 페이지는 현재 작업중에 있습니다.</p>
-            <p class="change_color_txt">최대한 빨리 작업을 완료하도록 하겠습니다.</p>
+        <div class="visual_sub_banner">
+            <div class="visual_sub_banner_text">
+                <div class="visual_sub_banner_text_box"></div>
+                <p><a href="../index.html"><i class="fas fa-home"></i></a> > 작업실 > <a
+                        href="../sub_workshop/project.html">프로젝트</a></p>
+            </div>
+            <div class="visual_sub_banner_img">
+                <p class="visual_sub_banner_img_title">PROJECTS</p>
+                <p class="visual_sub_banner_img_text">Explore the projects</p>
+            </div>
+        </div>
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_f16" checked>
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_f2">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_f14">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_f15">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_a10">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_f22">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_f23">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_av8b">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_fa18">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_fa18ef">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_mq81">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_f35b">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_tornado">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_a6e">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_ea6b">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_t45c">
+        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_huey">
+        <div class="catalog_box">
+            <div class="catalog_box_view">
+                <label class="catalog_btn catalog_btn_f16 change_color_catalog_txt" for="tab_projects_f16">
+                    F-16
+                </label>
+                <label class="catalog_btn catalog_btn_f2 change_color_catalog_txt" for="tab_projects_f2">
+                    F-2
+                </label>
+                <label class="catalog_btn catalog_btn_f14 change_color_catalog_txt" for="tab_projects_f14">
+                    F-14
+                </label>
+                <label class="catalog_btn catalog_btn_f15 change_color_catalog_txt" for="tab_projects_f15">
+                    F-15
+                </label>
+                <label class="catalog_btn catalog_btn_a10 change_color_catalog_txt" for="tab_projects_a10">
+                    A-10
+                </label>
+                <label class="catalog_btn catalog_btn_f22 change_color_catalog_txt" for="tab_projects_f22">
+                    F-22
+                </label>
+                <label class="catalog_btn catalog_btn_f23 change_color_catalog_txt" for="tab_projects_f23">
+                    F-23
+                </label>
+                <label class="catalog_btn catalog_btn_av8b change_color_catalog_txt" for="tab_projects_av8b">
+                    AV-8B
+                </label>
+                <label class="catalog_btn catalog_btn_fa18 change_color_catalog_txt" for="tab_projects_fa18">
+                    F/A-18
+                </label>
+                <label class="catalog_btn catalog_btn_fa18ef change_color_catalog_txt" for="tab_projects_fa18ef">
+                    F/A-18E/F
+                </label>
+                <label class="catalog_btn catalog_btn_mq81 change_color_catalog_txt" for="tab_projects_mq81">
+                    MQ-81
+                </label>
+                <label class="catalog_btn catalog_btn_f35b change_color_catalog_txt" for="tab_projects_f35b">
+                    F-35B
+                </label>
+                <label class="catalog_btn catalog_btn_tornado change_color_catalog_txt" for="tab_projects_tornado">
+                    Tornado
+                </label>
+                <label class="catalog_btn catalog_btn_a6e change_color_catalog_txt" for="tab_projects_a6e">
+                    A-6E
+                </label>
+                <label class="catalog_btn catalog_btn_ea6b change_color_catalog_txt" for="tab_projects_ea6b">
+                    EA-6B
+                </label>
+                <label class="catalog_btn catalog_btn_huey change_color_catalog_txt" for="tab_projects_huey">
+                    Huey
+                </label>
+            </div>
+        </div>
+
+        <section class="section_feature change_color_outline">
+            <div class="feature_f16 box_feature">
+                <div class="feature_top features">
+                    <img class="feature_img" src="../sub_workshop/img/f16/f16_promo.jpg" alt="">
+
+                    <div>
+                        <p class="title_big change_color_txt_title">F-16 Fighting Falcon</p>
+                        <p class="change_color_txt">F-16 Fighting Falcon은 미국, 한국 등 26개국에서 운용하는 주력 전투기인 F-16을 Arma 3에서
+                            구현한 모드입니다. 2015년 1월 1일에 처음 모드를 출시한 이래, F-16 모드는 Arma 3 게임 플레이어들에게 다양한 스킨, 무장 옵션, 기능 등을 통하여
+                            다양하고 재밌는 플레이 경험들을 제공해왔으며 2023년 4월 현재 19만명 이상의 사용자를 보유하고있는 명실상부한 Arma 3의 대표 고정익 항공기 모드로
+                            자리잡았습니다.</p>
+                    </div>
+                </div>
+                <div class="feature_mid features">
+                    <div>
+                        <img src="../sub_workshop/img/f16/f16_detail.jpg" alt="">
+                        <p class="title_sub change_color_txt">디테일</p>
+                        <div class="change_color_txt">
+                            <p>· F-16 파이팅 팰콘을 정밀하게 재현</p>
+                            <p>· 리벳과 데칼들을 충실히 구현한 높은 디테일</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../sub_workshop/img/f16/f16_performance.jpg" alt="">
+                        <p class="title_sub change_color_txt">퍼포먼스</p>
+                        <div class="change_color_txt">
+                            <p>· 다양한 로드아웃 옵션</p>
+                            <p>· 게임 상황에 맞는 유연한 세팅이 가능</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../sub_workshop/img/f16/f16_use.jpg" alt="">
+                        <p class="title_sub change_color_txt">쉬운 사용</p>
+                        <div class="change_color_txt">
+                            <p>· 쉬운 조작법으로 초보자도 쉽게 플레이 가능</p>
+                            <p>· 안정적인 조작성으로 부드러운 조작</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../sub_workshop/img/f16/f16_ex.jpg" alt="">
+                        <p class="title_sub change_color_txt">확장성</p>
+                        <div class="change_color_txt">
+                            <p>· 다양한 모드 지원</p>
+                            <p>· 다양한 스킨 지원</p>
+                            <p>· 자신만의 스킨, 컨피그로 개조 가능</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_misc features">
+                    <div class="misc_left">
+                        <p class="title_big change_color_txt_title">갤러리</p>
+                        <div class="misc_gallery_wrap">
+                            <div class="misc_gallery">
+                                <div>
+                                    <img src="../img/f16_1.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="../sub_workshop/img/f16/f16_promo.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="../sub_workshop/img/f16/f16_performance.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="../sub_workshop/img/f16/f16_use.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="../sub_workshop/img/f16/f16_ex.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="slick_control">
+                                <button class="btn_play">Play</button>
+                                <button class="btn_pause">Pause</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="misc_right">
+                        <p class="title_big change_color_txt_title">더 알아 보기</p>
+                        <a href="#" class="misc_btns">
+                            <img src="../sub_workshop/img/detail_bright.png" alt="">
+                            <p class="text_quick_cat">상세 페이지로 이동</p>
+                        </a>
+                        <a href="#" class="misc_btns">
+                            <img src="../sub_workshop/img/tutorial_bright.png" alt="">
+                            <p class="text_quick_cat">튜토리얼 찾아보기</p>
+                        </a>
+                        <a href="#" class="misc_btns">
+                            <img src="../sub_workshop/img/download_bright.png" alt="">
+                            <p class="text_quick_cat">다운로드</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <input type="checkbox" name="" id="menu_mobile_news_chk">
-        <input type="checkbox" name="" id="menu_mobile_workshop_chk">
-        <input type="checkbox" name="" id="menu_mobile_download_chk">
-        <input type="checkbox" name="" id="menu_mobile_about_chk">
+        <input type="radio" name="tab_menu_mobile" id="menu_mobile_dummy_chk" checked>
+        <input type="radio" name="tab_menu_mobile" id="menu_mobile_news_chk">
+        <input type="radio" name="tab_menu_mobile" id="menu_mobile_workshop_chk">
+        <input type="radio" name="tab_menu_mobile" id="menu_mobile_download_chk">
+        <input type="radio" name="tab_menu_mobile" id="menu_mobile_about_chk">
         <aside class="wing_menu_mobile">
             <div class="box_menu_m_top">
                 <div class="box_menu_m_top_l">
@@ -207,6 +364,7 @@
                     <div class="menu_mobile_title">
                         <p>뉴스</p>
                         <i class="fas fa-caret-down"></i>
+                        <label for="menu_mobile_dummy_chk"></label>
                     </div>
                     <div class="menu_mobile">
                         <a href="#">게임 뉴스 <i class="fas fa-caret-right"></i></a>
@@ -219,9 +377,10 @@
                     <div class="menu_mobile_title">
                         <p>작업실</p>
                         <i class="fas fa-caret-down"></i>
+                        <label for="menu_mobile_dummy_chk"></label>
                     </div>
                     <div class="menu_mobile">
-                        <a href="#">프로젝트 <i class="fas fa-caret-right"></i></a>
+                        <a href="../sub_workshop/project.html">프로젝트 <i class="fas fa-caret-right"></i></a>
                         <a href="#">작업보고 <i class="fas fa-caret-right"></i></a>
                         <a href="#">튜토리얼 <i class="fas fa-caret-right"></i></a>
                     </div>
@@ -230,6 +389,7 @@
                     <div class="menu_mobile_title">
                         <p>다운로드</p>
                         <i class="fas fa-caret-down"></i>
+                        <label for="menu_mobile_dummy_chk"></label>
                     </div>
                     <div class="menu_mobile">
                         <a href="#">모드 <i class="fas fa-caret-right"></i></a>
@@ -241,6 +401,7 @@
                     <div class="menu_mobile_title">
                         <p>소개</p>
                         <i class="fas fa-caret-down"></i>
+                        <label for="menu_mobile_dummy_chk"></label>
                     </div>
                     <div class="menu_mobile">
                         <a href="#">제작자 소개 <i class="fas fa-caret-right"></i></a>
@@ -358,6 +519,22 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
     </script>
     <script>
+        $('.misc_gallery').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 2000
+        });
+
+        $('.btn_pause').on('click', function () {
+            $('.misc_gallery').slick('slickPause');
+        });
+
+        $('.btn_play').on('click', function () {
+            $('.misc_gallery').slick('slickPlay');
+        });
 
         const target = document.getElementById("target");
 
