@@ -102,6 +102,7 @@ img {
     transition: 0.2s;
     visibility: hidden;
     opacity: 0;
+    z-index: 999;
 }
 
 .btn_top>a {
@@ -410,6 +411,7 @@ img {
 }
 
 .logo_img {
+    display: block;
     width: 175px;
     float: left;
     margin-left: 5px;

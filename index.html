@@ -78,10 +78,10 @@
                     <div class="btn_menu_news">
                         <p class="stb">뉴스</p>
                         <div class="menu_pc_sub menu_pc_sub_news">
-                            <a href="#">게임 뉴스</a>
+                            <a href="./wip_page.html">게임 뉴스</a>
                             <a href="./sub_news/modnews.html">모드 뉴스</a>
-                            <a href="#">개발 리포트</a>
-                            <a href="#">기타 뉴스</a>
+                            <a href="./wip_page.html">개발 리포트</a>
+                            <a href="./wip_page.html">기타 뉴스</a>
                         </div>
                     </div>
                     <div class="btn_menu_workshop">
@@ -134,9 +134,9 @@
         </div>
 
         <div class="header_mobile">
-            <div class="logo_img">
-                <img src="./img/logo_dark.png" alt="">
-            </div>
+            <a class="logo_img" href="./index.html">
+                <img src="../img/logo_dark.png" alt="">
+            </a>
             <label for="menu_mobile_chk" class="btn_menu_mobile">
                 <!-- <img src="./img/ham_bright.jpg" alt=""> -->
                 <img class="img_btn_menu_mobile" alt="">
@@ -474,32 +474,25 @@
             $('.visual_banner_main').slick('slickPlay');
         });
 
-        const target = document.getElementById("target");
+        let top_btn = document.querySelector(".btn_top");
 
-        function callback(entries, observer) {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    console.log("Fully visible");
-                    document.getElementById("id_btn_top").style.visibility = "visible";
-                    document.getElementById("id_btn_top").style.opacity = "1";
-                } else {
-                    console.log("not fully visible");
-                    document.getElementById("id_btn_top").style.visibility = "hidden";
-                    document.getElementById("id_btn_top").style.opacity = "0";
-                }
-            });
+        function toggle(display,opacity) {
+            top_btn.style.visibility = display;
+            top_btn.style.opacity = opacity;
+            console.log('works');
         }
 
-        function createObserver(target, callback) {
-            const options = {
-                root: null,
-                threshold: 1
-            };
-            const observer = new IntersectionObserver(callback, options);
-            observer.observe(target);
-        }
+        window.addEventListener('scroll', function (e) {
+            let scrollHeight = window.scrollY;
+            // console.log(targetHeight,scrollHeight);
 
-        createObserver(target, callback);
+            if (scrollHeight >= 900 ) {
+                toggle("visible",1);
+            }
+            else {
+                toggle("hidden",0);
+            }
+        });
     </script>
 </body>
 

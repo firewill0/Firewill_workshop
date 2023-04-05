@@ -135,9 +135,9 @@
         </div>
 
         <div class="header_mobile">
-            <div class="logo_img">
+            <a class="logo_img" href="../index.html">
                 <img src="../img/logo_dark.png" alt="">
-            </div>
+            </a>
             <label for="menu_mobile_chk" class="btn_menu_mobile">
                 <!-- <img src="./img/ham_bright.jpg" alt=""> -->
                 <img class="img_btn_menu_mobile" alt="">
@@ -147,7 +147,8 @@
         <div class="visual_sub_banner">
             <div class="visual_sub_banner_text">
                 <div class="visual_sub_banner_text_box change_color_box"></div>
-                <p class="change_color_txt"><a class="change_color_txt" href="../index.html"><i class="fas fa-home"></i></a> > 작업실 > <a class="change_color_txt"
+                <p class="change_color_txt"><a class="change_color_txt" href="../index.html"><i
+                            class="fas fa-home"></i></a> > 작업실 > <a class="change_color_txt"
                         href="../sub_workshop/project.html">프로젝트</a></p>
             </div>
             <div class="visual_sub_banner_img project_img">
@@ -180,7 +181,7 @@
                 </label>
                 <label class="catalog_btn catalog_btn_AWS change_color_catalog_txt" for="tab_projects_AWS">
                     AWS
-                </label>                
+                </label>
                 <label class="catalog_btn catalog_btn_f2 change_color_catalog_txt" for="tab_projects_f2">
                     F-2
                 </label>
@@ -328,7 +329,8 @@
 
                     <div>
                         <p class="title_big change_color_txt_title">F-2 VIPER ZERO</p>
-                        <p class="change_color_txt">F-16의 배다른 형제라고도 흔히 표현되는 F-2는 일본 항공자위대(JASDF)의 주력 전술기로, 대함 및 해안 방어 작전에 특화된 성능을 보유하고 있습니다. 또한 F-16에서 파생된 디자인과 성능은 F-16 모드의 사용에 익숙한 플레이어라면 쉽게 적응할 수 있을 것 입니다.</p>
+                        <p class="change_color_txt">F-16의 배다른 형제라고도 흔히 표현되는 F-2는 일본 항공자위대(JASDF)의 주력 전술기로, 대함 및 해안 방어
+                            작전에 특화된 성능을 보유하고 있습니다. 또한 F-16에서 파생된 디자인과 성능은 F-16 모드의 사용에 익숙한 플레이어라면 쉽게 적응할 수 있을 것 입니다.</p>
                     </div>
                 </div>
                 <div class="feature_mid features">
@@ -394,7 +396,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="misc_right">
+                    <div class="misc_right target">
                         <p class="title_big change_color_txt_title">더 알아 보기</p>
                         <a href="#" class="misc_btns">
                             <img class="misc_img_detail" src="" alt="">
@@ -630,32 +632,25 @@
             $('.misc_gallery').slick('slickPlay');
         });
 
-        const target = document.getElementById("target");
+        let top_btn = document.querySelector(".btn_top");
 
-        function callback(entries, observer) {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    console.log("Fully visible");
-                    document.getElementById("id_btn_top").style.visibility = "visible";
-                    document.getElementById("id_btn_top").style.opacity = "1";
-                } else {
-                    console.log("not fully visible");
-                    document.getElementById("id_btn_top").style.visibility = "hidden";
-                    document.getElementById("id_btn_top").style.opacity = "0";
-                }
-            });
+        function toggle(display,opacity) {
+            top_btn.style.visibility = display;
+            top_btn.style.opacity = opacity;
+            console.log('works');
         }
 
-        function createObserver(target, callback) {
-            const options = {
-                root: null,
-                threshold: 1
-            };
-            const observer = new IntersectionObserver(callback, options);
-            observer.observe(target);
-        }
+        window.addEventListener('scroll', function (e) {
+            let scrollHeight = window.scrollY;
+            // console.log(targetHeight,scrollHeight);
 
-        createObserver(target, callback);
+            if (scrollHeight >= 900 ) {
+                toggle("visible",1);
+            }
+            else {
+                toggle("hidden",0);
+            }
+        });
     </script>
 </body>
 
