@@ -98,7 +98,8 @@ img {
 .btn_top {
     position: fixed;
     right: 15px;
-    bottom: 120px;
+    bottom: 15px;
+    /* 120px */
     transition: 0.2s;
     visibility: hidden;
     opacity: 0;
