@@ -85,7 +85,7 @@
 }
 
 .catalog_box_view {
-    width: 1600px;
+    width: 1700px;
     height: 100%;
 }
 
@@ -114,6 +114,10 @@
     color: #0080FF;
 }
 
+#tab_projects_AWS:checked~.section_feature .feature_aws {
+    display: block;
+}
+
 
 #tab_projects_f2:checked~.catalog_box .catalog_btn_f2 {
     color: #0080FF;
@@ -126,10 +130,18 @@
 #tab_projects_f14:checked~.catalog_box .catalog_btn_f14 {
     color: #0080FF;
 }
+#tab_projects_f14:checked~.section_feature .feature_f14 {
+    display: block;
+}
 
 #tab_projects_f15:checked~.catalog_box .catalog_btn_f15 {
     color: #0080FF;
 }
+
+#tab_projects_f15:checked~.section_feature .feature_f15 {
+    display: block;
+}
+
 
 #tab_projects_a10:checked~.catalog_box .catalog_btn_a10 {
     color: #0080FF;
@@ -154,6 +166,11 @@
 #tab_projects_fa18ef:checked~.catalog_box .catalog_btn_fa18ef {
     color: #0080FF;
 }
+
+#tab_projects_ea18g:checked~.catalog_box .catalog_btn_ea18g {
+    color: #0080FF;
+}
+
 
 #tab_projects_mq81:checked~.catalog_box .catalog_btn_mq81 {
     color: #0080FF;
@@ -337,6 +354,10 @@
 @media all and (min-width:1024px) {
     .visual_sub_banner {
         padding-top: 15px;
+    }
+
+    .feature_top {
+        align-items: flex-start;
     }
 
     .feature_mid {
