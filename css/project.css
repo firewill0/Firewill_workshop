@@ -85,7 +85,7 @@
 }
 
 .catalog_box_view {
-    width: 1700px;
+    width: 1500px;
     height: 100%;
 }
 
@@ -105,7 +105,6 @@
 #tab_projects_f16:checked~.catalog_box .catalog_btn_f16 {
     color: #0080FF;
 }
-
 #tab_projects_f16:checked~.section_feature .feature_f16 {
     display: block;
 }
@@ -113,11 +112,9 @@
 #tab_projects_AWS:checked~.catalog_box .catalog_btn_AWS {
     color: #0080FF;
 }
-
 #tab_projects_AWS:checked~.section_feature .feature_aws {
     display: block;
 }
-
 
 #tab_projects_f2:checked~.catalog_box .catalog_btn_f2 {
     color: #0080FF;
@@ -125,7 +122,6 @@
 #tab_projects_f2:checked~.section_feature .feature_f2 {
     display: block;
 }
-
 
 #tab_projects_f14:checked~.catalog_box .catalog_btn_f14 {
     color: #0080FF;
@@ -137,64 +133,80 @@
 #tab_projects_f15:checked~.catalog_box .catalog_btn_f15 {
     color: #0080FF;
 }
-
 #tab_projects_f15:checked~.section_feature .feature_f15 {
     display: block;
 }
 
-
 #tab_projects_a10:checked~.catalog_box .catalog_btn_a10 {
     color: #0080FF;
+}
+#tab_projects_a10:checked~.section_feature .feature_a10 {
+    display: block;
 }
 
 #tab_projects_f22:checked~.catalog_box .catalog_btn_f22 {
     color: #0080FF;
 }
+#tab_projects_f22:checked~.section_feature .feature_f22 {
+    display: block;
+}
 
 #tab_projects_f23:checked~.catalog_box .catalog_btn_f23 {
     color: #0080FF;
+}
+#tab_projects_f23:checked~.section_feature .feature_f23 {
+    display: block;
 }
 
 #tab_projects_av8b:checked~.catalog_box .catalog_btn_av8b {
     color: #0080FF;
 }
+#tab_projects_av8b:checked~.section_feature .feature_av8b {
+    display: block;
+}
 
 #tab_projects_fa18:checked~.catalog_box .catalog_btn_fa18 {
     color: #0080FF;
+}
+#tab_projects_fa18:checked~.section_feature .feature_fa18 {
+    display: block;
 }
 
 #tab_projects_fa18ef:checked~.catalog_box .catalog_btn_fa18ef {
     color: #0080FF;
 }
+#tab_projects_fa18ef:checked~.section_feature .feature_fa18ef {
+    display: block;
+}
 
 #tab_projects_ea18g:checked~.catalog_box .catalog_btn_ea18g {
     color: #0080FF;
 }
-
-
-#tab_projects_mq81:checked~.catalog_box .catalog_btn_mq81 {
-    color: #0080FF;
+#tab_projects_ea18g:checked~.section_feature .feature_ea18g {
+    display: block;
 }
 
 #tab_projects_f35b:checked~.catalog_box .catalog_btn_f35b {
     color: #0080FF;
 }
+#tab_projects_f35b:checked~.section_feature .feature_f35b {
+    display: block;
+}
 
 #tab_projects_tornado:checked~.catalog_box .catalog_btn_tornado {
     color: #0080FF;
 }
-
-#tab_projects_a6e:checked~.catalog_box .catalog_btn_a6e {
-    color: #0080FF;
+#tab_projects_tornado:checked~.section_feature .feature_tornado {
+    display: block;
 }
 
 #tab_projects_ea6b:checked~.catalog_box .catalog_btn_ea6b {
     color: #0080FF;
 }
-
-#tab_projects_huey:checked~.catalog_box .catalog_btn_huey {
-    color: #0080FF;
+#tab_projects_ea6b:checked~.section_feature .feature_ea6b {
+    display: block;
 }
+
 
 .section_feature {
     margin-top: 15px;
