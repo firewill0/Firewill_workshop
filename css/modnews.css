@@ -51,6 +51,8 @@
 
 .article .news_desc {
     width: 60%;
+    padding-left: 15px;
+    box-sizing: border-box;
 }
 
 .news_title {
@@ -113,6 +115,7 @@
     align-content: space-between;
     justify-content: center;
     text-align: center;
+    padding-left: 0;
 }
 
 #tab_news_style_grid:checked~.section_news .box_news .article .news_title {
@@ -147,6 +150,7 @@
     align-content: space-between;
     justify-content: center;
     text-align: center;
+    padding-left: 0;
 }
 
 #tab_news_style_square:checked~.section_news .box_news .article .news_title {
@@ -159,9 +163,9 @@
 }
 
 @media all and (min-width:601px) {
-    #tab_news_style_list:checked~.section_news .box_news .article .news_desc {
+    /* #tab_news_style_list:checked~.section_news .box_news .article .news_desc {
         margin-left: 15px;
-    }
+    } */
 }
 
 @media all and (min-width:1024px) {
