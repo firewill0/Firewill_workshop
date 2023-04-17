@@ -25,10 +25,7 @@
 </head>
 
 <body>
-    <input type="radio" name="tab_content_color" id="content_color_btn1" checked>
-    <input type="radio" name="tab_content_color" id="content_color_btn2">
-
-    <div class="body">
+    <div class="body mode_paleazure">
         <input type="checkbox" name="" id="menu_mobile_chk">
         <input type="checkbox" name="" id="menu_language_pc_chk">
         <input type="checkbox" name="" id="menu_language_m_chk">
@@ -133,8 +130,8 @@
                 </div>
                 <div class="profile_option_box">
                     <p class="profile_setting_title">웹 페이지 보기 모드</p>
-                    <label for="content_color_btn1">페일 애저(브라이트)</label>
-                    <label for="content_color_btn2">다크 블루(다크)</label>
+                    <label class="btn_color_paleazure" for="content_color_btn1">페일 애저(브라이트)</label>
+                    <label class="btn_color_darkblue" for="content_color_btn2">다크 블루(다크)</label>
                 </div>
             </div>
         </div>
@@ -177,8 +174,8 @@
                 </div>
                 <div class="profile_option_box_m">
                     <p class="profile_setting_title">웹 페이지 보기 모드</p>
-                    <label for="content_color_btn1">페일 애저(브라이트)</label>
-                    <label for="content_color_btn2">다크 블루(다크)</label>
+                    <label class="btn_color_paleazure" for="content_color_btn1">페일 애저(브라이트)</label>
+                    <label class="btn_color_darkblue" for="content_color_btn2">다크 블루(다크)</label>
                 </div>
             </div>
             <div class="box_menu_m_center">
@@ -346,6 +343,18 @@
         </div>
     </div>
 
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+    <script src="../script/cookie/jquery.cookie.js"></script>
+    <script src="../script/control/page_control.js"></script>
+    <script>
+        $('.btn_menu_mobile').on('click', function () {
+            $('.btn_menu_mobile').toggleClass('mobile_btn_on');
+            $('.wing_menu_mobile').toggleClass('mobile_menu_on');
+        });
+
+    </script>
 </body>
 
 </html>

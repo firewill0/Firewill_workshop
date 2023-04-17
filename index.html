@@ -21,9 +21,6 @@
 
 <body>
     <div class="body mode_paleazure">
-        <input type="checkbox" name="" id="menu_mobile_chk">
-        <input type="checkbox" name="" id="menu_language_pc_chk">
-        <input type="checkbox" name="" id="menu_language_m_chk">
         <header class="header">
             <div class="logo_img_pc">
                 <a href="./index.html">
@@ -53,7 +50,7 @@
                     </button>
                 </div> <!-- box_search -->
                 <div class="btn_language_area">
-                    <label class="btn_language" for="menu_language_pc_chk">
+                    <label class="btn_language">
                         <img alt="">
                     </label>
                     <div class="box_language_pc">
@@ -68,8 +65,6 @@
             </div> <!-- gnb -->
         </header> <!-- header -->
 
-        <input type="checkbox" name="" id="menu_setting_pc_chk">
-        <input type="checkbox" name="" id="menu_setting_m_chk">
         <div class="lnb_outer">
             <div class="lnb_pc">
                 <div class="menu_pc">
@@ -125,8 +120,8 @@
                 </div> <!-- lnb_profile -->
                 <div class="profile_option_box">
                     <p class="profile_setting_title">웹 페이지 보기 모드</p>
-                    <label class="btn_color_paleazure" for="content_color_btn1">페일 애저(브라이트)</label>
-                    <label class="btn_color_darkblue" for="content_color_btn2">다크 블루(다크)</label>
+                    <label class="btn_color_paleazure">페일 애저(브라이트)</label>
+                    <label class="btn_color_darkblue">다크 블루(다크)</label>
                 </div> <!-- profile_option_box -->
             </div> <!-- lnb_pc -->
         </div> <!-- lnb_outer -->
@@ -135,7 +130,7 @@
             <a class="logo_img" href="./index.html">
                 <img src="./img/logo_dark.png" alt="">
             </a>
-            <label for="menu_mobile_chk" class="btn_menu_mobile">
+            <label class="btn_menu_mobile">
                 <img class="img_btn_menu_mobile" alt="">
             </label> <!-- btn_menu_mobile -->
         </div> <!-- header_mobile -->
@@ -254,11 +249,6 @@
             </div> <!-- content_main_right -->
         </div> <!-- wrap_content_main -->
 
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_dummy_chk" checked>
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_news_chk">
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_workshop_chk">
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_download_chk">
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_about_chk">
         <aside class="wing_menu_mobile">
             <div class="box_menu_m_top">
                 <div class="box_menu_m_top_l">
@@ -273,8 +263,8 @@
                 </div> <!-- box_menu_m_top_r -->
                 <div class="profile_option_box_m">
                     <p class="profile_setting_title">웹 페이지 보기 모드</p>
-                    <label class="btn_color_paleazure" for="content_color_btn1">페일 애저(브라이트)</label>
-                    <label class="btn_color_darkblue" for="content_color_btn2">다크 블루(다크)</label>
+                    <label class="btn_color_paleazure">페일 애저(브라이트)</label>
+                    <label class="btn_color_darkblue">다크 블루(다크)</label>
                 </div> <!-- profile_option_box_m -->
             </div> <!-- box_menu_m_top -->
             <div class="box_menu_m_center">
@@ -282,7 +272,7 @@
                 <button class="btn_search_m" type="button">
                     <i class="fas fa-search"></i>
                 </button> <!-- btn_search_m -->
-                <label for="menu_language_m_chk" class="language_m btn_mobile">
+                <label class="language_m btn_mobile">
                     <img src="./img/globe_dark.png" alt="">
                 </label> <!-- language_m -->
                 <div class="box_language_m">
@@ -295,11 +285,10 @@
                 </div> <!-- box_language_m -->
             </div> <!-- box_menu_m_center -->
             <div class="box_menu_m_bottom">
-                <label for="menu_mobile_news_chk" class="btn_menu_news_m btn_menu_m_common">
+                <div for="menu_mobile_news_chk" class="btn_menu_news_m btn_menu_m_common">
                     <div class="menu_mobile_title">
                         <p>뉴스</p>
                         <i class="fas fa-caret-down"></i>
-                        <label for="menu_mobile_dummy_chk"></label>
                     </div> <!-- menu_mobile_title -->
                     <div class="menu_mobile">
                         <a href="./wip_page.html">게임 뉴스 <i class="fas fa-caret-right"></i></a>
@@ -307,43 +296,40 @@
                         <a href="./wip_page.html">기타 뉴스 <i class="fas fa-caret-right"></i></a>
                         <a href="./wip_page.html">개발 리포트 <i class="fas fa-caret-right"></i></a>
                     </div> <!-- menu_mobile -->
-                </label> <!-- btn_menu_news_m -->
-                <label for="menu_mobile_workshop_chk" class="btn_menu_workshop_m btn_menu_m_common">
+                </div> <!-- btn_menu_news_m -->
+                <div for="menu_mobile_workshop_chk" class="btn_menu_workshop_m btn_menu_m_common">
                     <div class="menu_mobile_title">
                         <p>작업실</p>
                         <i class="fas fa-caret-down"></i>
-                        <label for="menu_mobile_dummy_chk"></label>
                     </div> <!-- menu_mobile_title -->
                     <div class="menu_mobile">
                         <a href="./sub_workshop/project.html">프로젝트 <i class="fas fa-caret-right"></i></a>
                         <a href="./wip_page.html">작업보고 <i class="fas fa-caret-right"></i></a>
                         <a href="./wip_page.html">튜토리얼 <i class="fas fa-caret-right"></i></a>
                     </div> <!-- menu_mobile -->
-                </label> <!-- btn_menu_workshop_m -->
-                <label for="menu_mobile_download_chk" class="btn_menu_download_m btn_menu_m_common">
+                </div> <!-- btn_menu_workshop_m -->
+                <div for="menu_mobile_download_chk" class="btn_menu_download_m btn_menu_m_common">
                     <div class="menu_mobile_title">
                         <p>다운로드</p>
                         <i class="fas fa-caret-down"></i>
-                        <label for="menu_mobile_dummy_chk"></label>
                     </div> <!-- menu_mobile_title -->
                     <div class="menu_mobile">
                         <a href="./wip_page.html">모드 <i class="fas fa-caret-right"></i></a>
                         <a href="./wip_page.html">스킨 템플릿 <i class="fas fa-caret-right"></i></a>
                         <a href="./wip_page.html">월페이퍼 <i class="fas fa-caret-right"></i></a>
                     </div> <!-- menu_mobile -->
-                </label> <!-- btn_menu_download_m -->
-                <label for="menu_mobile_about_chk" class="btn_menu_about_m btn_menu_m_common">
+                </div> <!-- btn_menu_download_m -->
+                <div for="menu_mobile_about_chk" class="btn_menu_about_m btn_menu_m_common">
                     <div class="menu_mobile_title">
                         <p>소개</p>
                         <i class="fas fa-caret-down"></i>
-                        <label for="menu_mobile_dummy_chk"></label>
                     </div> <!-- menu_mobile_title -->
                     <div class="menu_mobile">
                         <a href="./wip_page.html">제작자 소개 <i class="fas fa-caret-right"></i></a>
                         <a href="./wip_page.html">팀원 소개 <i class="fas fa-caret-right"></i></a>
                         <a href="./wip_page.html">기타 이야기 <i class="fas fa-caret-right"></i></a>
                     </div> <!-- menu_mobile -->
-                </label> <!-- btn_menu_about_m -->
+                </div> <!-- btn_menu_about_m -->
                 <a class="btn_menu_m_common"
                     href="https://forums.bohemia.net/forums/topic/180959-firewill-standalone-series-release-thread/"
                     target="_blank">
@@ -355,9 +341,6 @@
             </div> <!-- box_menu_m_bottom -->
         </aside> <!-- wing_menu_mobile -->
 
-
-        <input type="checkbox" name="" id="footer_mobile_check">
-        <input type="checkbox" name="" id="sitemap_pc_check">
         <div class="footer_outer">
             <footer class="footer" id="footer_id">
                 <div class="footer_left">
@@ -369,8 +352,8 @@
 
                 <div class="footer_right">
                     <div class="footer_sns_mobile">
-                        <label for="footer_mobile_check" class="btn_footer_mobile">
-                            <img class="footer_mobile_open" src="./img/btn_bottom_open_dark.png" alt="">
+                        <label class="btn_footer_mobile">
+                            <img class="footer_mobile_open" src="./img/btn_bottom_open_dark.png">
                         </label> <!-- btn_footer_mobile -->
                         <div class="footer_sns_list">
                             <a href="https://github.com/firewill0/FIR_AWS_SystemDevelopment" target="_blank">
@@ -385,13 +368,13 @@
                             <a href="https://www.youtube.com/@firewill0" target="_blank">
                                 <img src="./img/btn_yt_bright.png" alt="">
                             </a>
-                            <label for="footer_mobile_check" class="btn_footer_mobile_close">
+                            <label for="footer_mobile_check" class="btn_footer_mobile btn_footer_mobile_close">
                                 <img class="footer_mobile_close" src="./img/btn_bottom_close_dark.png" alt="">
                             </label>
                         </div> <!-- footer_sns_list -->
                     </div> <!-- footer_sns_mobile -->
                     <div class="sitemap_pc">
-                        <label class="sitemap" for="sitemap_pc_check">
+                        <label class="sitemap">
                             <p>사이트맵</p>
                         </label> <!-- sitemap -->
                         <div class="sitemap_list">
@@ -459,8 +442,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
     </script>
     <script>
-
-
         $('.visual_banner_main').slick({
             dots: true,
             infinite: true,
@@ -487,7 +468,7 @@
         let body = document.querySelector(".body");
         let body_ch = body.clientHeight;
 
-        console.log(body_ch);
+        // console.log(body_ch);
 
         if (w >= 1024) {
             target = document.querySelector(".target");
@@ -537,7 +518,7 @@
         window.addEventListener('scroll', function (e) {
             let scrollHeight = window.scrollY;
 
-            console.log(scrollHeight);
+            // console.log(scrollHeight);
 
             const rect = target.getBoundingClientRect();
 
@@ -552,14 +533,14 @@
             }
 
             if (isInViewport(target)) {
-                messageText = 'The box is visible in the viewport';
+                // messageText = 'The box is visible in the viewport';
                 moveTop("120px");
             } else {
-                messageText = 'The box is not visible in the viewport';
+                // messageText = 'The box is not visible in the viewport';
                 moveTop("15px");
             }
 
-            console.log(messageText);
+            // console.log(messageText);
         });
     </script>
 </body>

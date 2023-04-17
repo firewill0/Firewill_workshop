@@ -20,13 +20,7 @@
 </head>
 
 <body>
-    <input type="radio" name="tab_content_color" id="content_color_btn1" checked>
-    <input type="radio" name="tab_content_color" id="content_color_btn2">
-
-    <div class="body">
-        <input type="checkbox" name="" id="menu_mobile_chk">
-        <input type="checkbox" name="" id="menu_language_pc_chk">
-        <input type="checkbox" name="" id="menu_language_m_chk">
+    <div class="body mode_paleazure">
         <header class="header">
             <div class="logo_img_pc">
                 <a href="../index.html">
@@ -71,8 +65,6 @@
             </div>
         </header>
 
-        <input type="checkbox" name="" id="menu_setting_pc_chk">
-        <input type="checkbox" name="" id="menu_setting_m_chk">
         <div class="lnb_outer">
             <div class="lnb_pc">
                 <div class="menu_pc">
@@ -128,8 +120,8 @@
                 </div>
                 <div class="profile_option_box">
                     <p class="profile_setting_title">웹 페이지 보기 모드</p>
-                    <label for="content_color_btn1">페일 애저(브라이트)</label>
-                    <label for="content_color_btn2">다크 블루(다크)</label>
+                    <label class="btn_color_paleazure" for="content_color_btn1">페일 애저(브라이트)</label>
+                    <label class="btn_color_darkblue" for="content_color_btn2">다크 블루(다크)</label>
                 </div>
             </div>
         </div>
@@ -138,11 +130,10 @@
             <a class="logo_img" href="../index.html">
                 <img src="../img/logo_dark.png" alt="">
             </a>
-            <label for="menu_mobile_chk" class="btn_menu_mobile">
-                <!-- <img src="./img/ham_bright.jpg" alt=""> -->
+            <label class="btn_menu_mobile">
                 <img class="img_btn_menu_mobile" alt="">
-            </label>
-        </div>
+            </label> <!-- btn_menu_mobile -->
+        </div> <!-- header_mobile -->
 
 
         <div class="visual_sub_banner">
@@ -158,73 +149,58 @@
             </div> <!-- visual_sub_banner_img -->
         </div> <!-- visual_sub_banner -->
 
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_f16" checked>
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_f2">
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_f14">
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_f15">
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_a10">
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_f22">
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_f23">
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_av8b">
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_fa18">
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_fa18ef">
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_ea18g">
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_f35b">
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_tornado">
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_ea6b">
-        <input type="radio" class="project_radio" name="tab_projects" id="tab_projects_AWS">
         <div class="catalog_box">
             <div class="catalog_box_view">
-                <label class="catalog_btn catalog_btn_f16 change_color_catalog_txt" for="tab_projects_f16">
+                <label class="on catalog_btn change_color_catalog_txt" id="catalog_btn_f16" for="tab_projects_f16">
                     F-16
                 </label>
-                <label class="catalog_btn catalog_btn_AWS change_color_catalog_txt" for="tab_projects_AWS">
+                <label class="catalog_btn change_color_catalog_txt" id="catalog_btn_firaws" for="tab_projects_AWS">
                     AWS
                 </label>
-                <label class="catalog_btn catalog_btn_f2 change_color_catalog_txt" for="tab_projects_f2">
+                <label class="catalog_btn change_color_catalog_txt" id="catalog_btn_f2" for="tab_projects_f2">
                     F-2
                 </label>
-                <label class="catalog_btn catalog_btn_f14 change_color_catalog_txt" for="tab_projects_f14">
+                <label class="catalog_btn change_color_catalog_txt" id="catalog_btn_f14" for="tab_projects_f14">
                     F-14
                 </label>
-                <label class="catalog_btn catalog_btn_f15 change_color_catalog_txt" for="tab_projects_f15">
+                <label class="catalog_btn change_color_catalog_txt" id="catalog_btn_f15" for="tab_projects_f15">
                     F-15
                 </label>
-                <label class="catalog_btn catalog_btn_a10 change_color_catalog_txt" for="tab_projects_a10">
+                <label class="catalog_btn change_color_catalog_txt" id="catalog_btn_a10" for="tab_projects_a10">
                     A-10
                 </label>
-                <label class="catalog_btn catalog_btn_f22 change_color_catalog_txt" for="tab_projects_f22">
+                <label class="catalog_btn change_color_catalog_txt" id="catalog_btn_f22" for="tab_projects_f22">
                     F-22
                 </label>
-                <label class="catalog_btn catalog_btn_f23 change_color_catalog_txt" for="tab_projects_f23">
+                <label class="catalog_btn change_color_catalog_txt" id="catalog_btn_f23" for="tab_projects_f23">
                     F-23
                 </label>
-                <label class="catalog_btn catalog_btn_av8b change_color_catalog_txt" for="tab_projects_av8b">
+                <label class="catalog_btn change_color_catalog_txt" id="catalog_btn_av8b" for="tab_projects_av8b">
                     AV-8B
                 </label>
-                <label class="catalog_btn catalog_btn_fa18 change_color_catalog_txt" for="tab_projects_fa18">
+                <label class="catalog_btn change_color_catalog_txt" id="catalog_btn_fa18" for="tab_projects_fa18">
                     F/A-18
                 </label>
-                <label class="catalog_btn catalog_btn_fa18ef change_color_catalog_txt" for="tab_projects_fa18ef">
+                <label class="catalog_btn change_color_catalog_txt" id="catalog_btn_fa18ef" for="tab_projects_fa18ef">
                     F/A-18E/F
                 </label>
-                <label class="catalog_btn catalog_btn_ea18g change_color_catalog_txt" for="tab_projects_ea18g">
+                <label class="catalog_btn change_color_catalog_txt" id="catalog_btn_ea18g" for="tab_projects_ea18g">
                     EA-18G
                 </label>
-                <label class="catalog_btn catalog_btn_f35b change_color_catalog_txt" for="tab_projects_f35b">
+                <label class="catalog_btn change_color_catalog_txt" id="catalog_btn_f35b" for="tab_projects_f35b">
                     F-35B
                 </label>
-                <label class="catalog_btn catalog_btn_tornado change_color_catalog_txt" for="tab_projects_tornado">
+                <label class="catalog_btn change_color_catalog_txt" id="catalog_btn_tornado" for="tab_projects_tornado">
                     Tornado
                 </label>
-                <label class="catalog_btn catalog_btn_ea6b change_color_catalog_txt" for="tab_projects_ea6b">
+                <label class="catalog_btn change_color_catalog_txt" id="catalog_btn_ea6b" for="tab_projects_ea6b">
                     EA-6B
                 </label>
             </div> <!-- catalog_box_view -->
         </div> <!-- catalog_box -->
 
         <section class="section_feature change_color_outline">
-            <div class="feature_f16 box_feature">
+            <div class="feature_f16 box_feature selected">
                 <div class="feature_top features">
                     <img class="feature_img" src="../sub_workshop/img/f16/title_f16.jpg" alt="">
 
@@ -235,7 +211,8 @@
                             다양하고 재밌는 플레이 경험들을 제공해왔으며 2023년 4월 현재 19만명 이상의 사용자를 보유하고있는 명실상부한 Arma 3의 대표 고정익 항공기 모드로
                             자리잡았습니다.</p>
                     </div>
-                </div> <!--feature_top-->
+                </div>
+                <!--feature_top-->
                 <div class="feature_mid features">
                     <div>
                         <img src="../sub_workshop/img/f16/f16_detail.jpg" alt="">
@@ -270,7 +247,8 @@
                             <p>· 자신만의 스킨, 컨피그로 개조 가능</p>
                         </div>
                     </div>
-                </div> <!--feature_mid-->
+                </div>
+                <!--feature_mid-->
                 <div class="section_misc features">
                     <div class="misc_left">
                         <p class="title_big change_color_txt_title">갤러리</p>
@@ -296,8 +274,10 @@
                                 <button class="btn_play">Play</button>
                                 <button class="btn_pause">Pause</button>
                             </div>
-                        </div> <!--misc_gallery_wrap-->
-                    </div> <!--misc_left-->
+                        </div>
+                        <!--misc_gallery_wrap-->
+                    </div>
+                    <!--misc_left-->
                     <div class="misc_right">
                         <p class="title_big change_color_txt_title">더 알아 보기</p>
                         <a href="#" class="misc_btns">
@@ -312,9 +292,12 @@
                             <img class="misc_img_download" src="" alt="">
                             <p class="text_quick_cat change_color_txt">다운로드</p>
                         </a>
-                    </div> <!--misc_right-->
-                </div> <!--section_misc-->
-            </div> <!--feature_f16-->
+                    </div>
+                    <!--misc_right-->
+                </div>
+                <!--section_misc-->
+            </div>
+            <!--feature_f16-->
 
             <div class="feature_f2 box_feature">
                 <div class="feature_top features">
@@ -405,9 +388,10 @@
                         </a>
                     </div>
                 </div>
-            </div> <!--feature_f2-->
+            </div>
+            <!--feature_f2-->
 
-            <div class="feature_aws box_feature">
+            <div class="feature_firaws box_feature">
                 <div class="feature_top features">
                     <img class="feature_img" src="../sub_workshop/img/aws/title_aws.jpg" alt="">
 
@@ -497,7 +481,8 @@
                         </a>
                     </div>
                 </div>
-            </div> <!--feature_aws-->
+            </div>
+            <!--feature_aws-->
 
             <div class="feature_f14 box_feature">
                 <div class="feature_top features">
@@ -592,7 +577,8 @@
                         </a>
                     </div>
                 </div>
-            </div> <!--feature_f14-->
+            </div>
+            <!--feature_f14-->
 
             <div class="feature_f15 box_feature">
                 <div class="feature_top features">
@@ -685,7 +671,8 @@
                         </a>
                     </div>
                 </div>
-            </div> <!--feature_f15-->
+            </div>
+            <!--feature_f15-->
 
             <div class="feature_a10 box_feature">
                 <div class="feature_top features">
@@ -778,7 +765,8 @@
                         </a>
                     </div>
                 </div>
-            </div> <!--feature_a10-->
+            </div>
+            <!--feature_a10-->
 
             <div class="feature_f22 box_feature">
                 <div class="feature_top features">
@@ -869,7 +857,8 @@
                         </a>
                     </div>
                 </div>
-            </div> <!--feature_f22-->
+            </div>
+            <!--feature_f22-->
 
             <div class="feature_f23 box_feature">
                 <div class="feature_top features">
@@ -958,7 +947,8 @@
                         </a>
                     </div>
                 </div>
-            </div> <!--feature_f23-->
+            </div>
+            <!--feature_f23-->
 
             <div class="feature_av8b box_feature">
                 <div class="feature_top features">
@@ -1053,7 +1043,8 @@
                         </a>
                     </div>
                 </div>
-            </div> <!--feature_av8b-->
+            </div>
+            <!--feature_av8b-->
 
             <div class="feature_fa18 box_feature">
                 <div class="feature_top features">
@@ -1147,7 +1138,8 @@
                         </a>
                     </div>
                 </div>
-            </div> <!--feature_fa18-->
+            </div>
+            <!--feature_fa18-->
 
             <div class="feature_fa18ef box_feature">
                 <div class="feature_top features">
@@ -1243,7 +1235,8 @@
                         </a>
                     </div>
                 </div>
-            </div> <!--feature_fa18ef-->
+            </div>
+            <!--feature_fa18ef-->
 
             <div class="feature_ea18g box_feature">
                 <div class="feature_top features">
@@ -1332,7 +1325,8 @@
                         </a>
                     </div>
                 </div>
-            </div> <!--feature_ea18g-->
+            </div>
+            <!--feature_ea18g-->
 
             <div class="feature_f35b box_feature">
                 <div class="feature_top features">
@@ -1423,7 +1417,8 @@
                         </a>
                     </div>
                 </div>
-            </div> <!--feature_f35b-->
+            </div>
+            <!--feature_f35b-->
 
             <div class="feature_tornado box_feature">
                 <div class="feature_top features">
@@ -1513,7 +1508,8 @@
                         </a>
                     </div>
                 </div>
-            </div> <!--feature_tornado-->
+            </div>
+            <!--feature_tornado-->
 
             <div class="feature_ea6b box_feature">
                 <div class="feature_top features">
@@ -1605,40 +1601,36 @@
                         </a>
                     </div>
                 </div>
-            </div> <!--feature_ea6b-->
+            </div>
+            <!--feature_ea6b-->
         </section> <!-- section_feature -->
 
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_dummy_chk" checked>
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_news_chk">
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_workshop_chk">
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_download_chk">
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_about_chk">
         <aside class="wing_menu_mobile">
             <div class="box_menu_m_top">
                 <div class="box_menu_m_top_l">
                     <img class="img_profile_m" src="../img/profile_pic.png" alt="">
                     <p class="text_profile_m">Firewill</p>
-                </div>
+                </div> <!-- box_menu_m_top_l -->
                 <div class="box_menu_m_top_r">
                     <label class="btn_profile_setting_m btn_mobile" for="menu_setting_m_chk">
                         <img class="" src="../img/cogwheel_dark.png" alt="">
                     </label>
                     <img class="btn_logout_m btn_mobile" src="../img/logout_dark.png" alt="">
-                </div>
+                </div> <!-- box_menu_m_top_r -->
                 <div class="profile_option_box_m">
                     <p class="profile_setting_title">웹 페이지 보기 모드</p>
-                    <label for="content_color_btn1">페일 애저(브라이트)</label>
-                    <label for="content_color_btn2">다크 블루(다크)</label>
-                </div>
-            </div>
+                    <label class="btn_color_paleazure">페일 애저(브라이트)</label>
+                    <label class="btn_color_darkblue">다크 블루(다크)</label>
+                </div> <!-- profile_option_box_m -->
+            </div> <!-- box_menu_m_top -->
             <div class="box_menu_m_center">
-                <input class="search_m" type="search" name="" id="">
+                <input class="search_m" type="search" name="" id=""> <!-- search_m -->
                 <button class="btn_search_m" type="button">
                     <i class="fas fa-search"></i>
-                </button>
-                <label for="menu_language_m_chk" class="language_m btn_mobile">
+                </button> <!-- btn_search_m -->
+                <label class="language_m btn_mobile">
                     <img src="../img/globe_dark.png" alt="">
-                </label>
+                </label> <!-- language_m -->
                 <div class="box_language_m">
                     <a href="#">
                         <p class="text_const">한국어</p>
@@ -1646,86 +1638,79 @@
                     <a href="#">
                         <p class="text_const">English</p>
                     </a>
-                </div>
-            </div>
+                </div> <!-- box_language_m -->
+            </div> <!-- box_menu_m_center -->
             <div class="box_menu_m_bottom">
-                <label for="menu_mobile_news_chk" class="btn_menu_news_m btn_menu_m_common">
+                <div for="menu_mobile_news_chk" class="btn_menu_news_m btn_menu_m_common">
                     <div class="menu_mobile_title">
                         <p>뉴스</p>
                         <i class="fas fa-caret-down"></i>
-                        <label for="menu_mobile_dummy_chk"></label>
-                    </div>
+                    </div> <!-- menu_mobile_title -->
                     <div class="menu_mobile">
                         <a href="../wip_page.html">게임 뉴스 <i class="fas fa-caret-right"></i></a>
                         <a href="../sub_news/modnews.html">모드 뉴스 <i class="fas fa-caret-right"></i></a>
                         <a href="../wip_page.html">기타 뉴스 <i class="fas fa-caret-right"></i></a>
                         <a href="../wip_page.html">개발 리포트 <i class="fas fa-caret-right"></i></a>
-                    </div>
-                </label>
-                <label for="menu_mobile_workshop_chk" class="btn_menu_workshop_m btn_menu_m_common">
+                    </div> <!-- menu_mobile -->
+                </div> <!-- btn_menu_news_m -->
+                <div for="menu_mobile_workshop_chk" class="btn_menu_workshop_m btn_menu_m_common">
                     <div class="menu_mobile_title">
                         <p>작업실</p>
                         <i class="fas fa-caret-down"></i>
-                        <label for="menu_mobile_dummy_chk"></label>
-                    </div>
+                    </div> <!-- menu_mobile_title -->
                     <div class="menu_mobile">
                         <a href="../sub_workshop/project.html">프로젝트 <i class="fas fa-caret-right"></i></a>
                         <a href="../wip_page.html">작업보고 <i class="fas fa-caret-right"></i></a>
                         <a href="../wip_page.html">튜토리얼 <i class="fas fa-caret-right"></i></a>
-                    </div>
-                </label>
-                <label for="menu_mobile_download_chk" class="btn_menu_download_m btn_menu_m_common">
+                    </div> <!-- menu_mobile -->
+                </div> <!-- btn_menu_workshop_m -->
+                <div for="menu_mobile_download_chk" class="btn_menu_download_m btn_menu_m_common">
                     <div class="menu_mobile_title">
                         <p>다운로드</p>
                         <i class="fas fa-caret-down"></i>
-                        <label for="menu_mobile_dummy_chk"></label>
-                    </div>
+                    </div> <!-- menu_mobile_title -->
                     <div class="menu_mobile">
                         <a href="../wip_page.html">모드 <i class="fas fa-caret-right"></i></a>
                         <a href="../wip_page.html">스킨 템플릿 <i class="fas fa-caret-right"></i></a>
                         <a href="../wip_page.html">월페이퍼 <i class="fas fa-caret-right"></i></a>
-                    </div>
-                </label>
-                <label for="menu_mobile_about_chk" class="btn_menu_about_m btn_menu_m_common">
+                    </div> <!-- menu_mobile -->
+                </div> <!-- btn_menu_download_m -->
+                <div for="menu_mobile_about_chk" class="btn_menu_about_m btn_menu_m_common">
                     <div class="menu_mobile_title">
                         <p>소개</p>
                         <i class="fas fa-caret-down"></i>
-                        <label for="menu_mobile_dummy_chk"></label>
-                    </div>
+                    </div> <!-- menu_mobile_title -->
                     <div class="menu_mobile">
                         <a href="../wip_page.html">제작자 소개 <i class="fas fa-caret-right"></i></a>
                         <a href="../wip_page.html">팀원 소개 <i class="fas fa-caret-right"></i></a>
                         <a href="../wip_page.html">기타 이야기 <i class="fas fa-caret-right"></i></a>
-                    </div>
-                </label>
+                    </div> <!-- menu_mobile -->
+                </div> <!-- btn_menu_about_m -->
                 <a class="btn_menu_m_common"
                     href="https://forums.bohemia.net/forums/topic/180959-firewill-standalone-series-release-thread/"
                     target="_blank">
                     <div class="btn_menu_forum_m">
                         <p>포럼</p>
                         <i class="fas fa-caret-right"></i>
-                    </div>
-                </a>
-            </div>
+                    </div> <!-- btn_menu_forum_m -->
+                </a> <!-- btn_menu_m_common -->
+            </div> <!-- box_menu_m_bottom -->
         </aside> <!-- wing_menu_mobile -->
 
-
-        <input type="checkbox" name="" id="footer_mobile_check">
-        <input type="checkbox" name="" id="sitemap_pc_check">
         <div class="footer_outer">
-            <footer class="footer">
+            <footer class="footer" id="footer_id">
                 <div class="footer_left">
                     <div class="footer_logo_img target">
                         <img src="../img/logo_small_dark.png" alt="">
-                    </div>
+                    </div> <!-- footer_logo_img target -->
                     <p class="footer_copyright">Copyright ⓒ Firewill Workshop all rights reserved.</p>
-                </div>
+                </div> <!-- footer_left -->
 
                 <div class="footer_right">
                     <div class="footer_sns_mobile">
-                        <label for="footer_mobile_check" class="btn_footer_mobile">
-                            <img class="footer_mobile_open" src="../img/btn_bottom_open_dark.png" alt="">
-                        </label>
+                        <label class="btn_footer_mobile">
+                            <img class="footer_mobile_open" src="../img/btn_bottom_open_dark.png">
+                        </label> <!-- btn_footer_mobile -->
                         <div class="footer_sns_list">
                             <a href="https://github.com/firewill0/FIR_AWS_SystemDevelopment" target="_blank">
                                 <img src="../img/btn_github_bright.png" alt="">
@@ -1739,15 +1724,15 @@
                             <a href="https://www.youtube.com/@firewill0" target="_blank">
                                 <img src="../img/btn_yt_bright.png" alt="">
                             </a>
-                            <label for="footer_mobile_check" class="btn_footer_mobile_close">
+                            <label for="footer_mobile_check" class="btn_footer_mobile btn_footer_mobile_close">
                                 <img class="footer_mobile_close" src="../img/btn_bottom_close_dark.png" alt="">
                             </label>
-                        </div>
-                    </div>
+                        </div> <!-- footer_sns_list -->
+                    </div> <!-- footer_sns_mobile -->
                     <div class="sitemap_pc">
-                        <label class="sitemap" for="sitemap_pc_check">
+                        <label class="sitemap">
                             <p>사이트맵</p>
-                        </label>
+                        </label> <!-- sitemap -->
                         <div class="sitemap_list">
                             <div>
                                 <p class="title_bold">뉴스</p>
@@ -1780,8 +1765,8 @@
                                     <p class="title_bold">포럼</p>
                                 </a>
                             </div>
-                        </div>
-                    </div>
+                        </div> <!-- sitemap_list -->
+                    </div> <!-- sitemap_pc -->
                     <div class="footer_sns">
                         <a href="https://github.com/firewill0/FIR_AWS_SystemDevelopment" target="_blank">
                             <img src="../img/github_dark.png" alt="">
@@ -1789,26 +1774,59 @@
                         <a href="https://discord.com/" target="_blank">
                             <img src="../img/discord_dark.png" alt="">
                         </a>
-                        <a href="../line_invite.html" target="_blank">
+                        <a href="line_invite.html" target="_blank">
                             <img src="../img/line_dark.png" alt="">
                         </a>
                         <a href="https://www.youtube.com/@firewill0" target="_blank">
                             <img src="../img/youtube_dark.png" alt="">
                         </a>
-                    </div>
-                </div>
-            </footer>
-        </div>
+                    </div> <!-- footer_sns -->
+                </div> <!-- footer_right -->
+            </footer> <!-- footer -->
+        </div> <!-- footer_outer -->
         <div class="btn_top" id="id_btn_top">
             <a href="#">TOP</a>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+    <script src="../script/control/page_control.js"></script>
+    <script src="../script/cookie/jquery.cookie.js"></script>
+    <script src="../script/control/hashmap_control.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
     </script>
     <script>
+
+        let map = new HashMap();
+        let array = [["catalog_btn_f16", "feature_f16"],["catalog_btn_firaws", "feature_firaws"],["catalog_btn_f2", "feature_f2"],["catalog_btn_f14", "feature_f14"],["catalog_btn_f15", "feature_f15"],["catalog_btn_a10", "feature_a10"],["catalog_btn_f22", "feature_f22"],["catalog_btn_f23", "feature_f23"],["catalog_btn_av8b", "feature_av8b"],["catalog_btn_fa18", "feature_fa18"],["catalog_btn_fa18ef", "feature_fa18ef"],["catalog_btn_ea18g", "feature_ea18g"],["catalog_btn_f35b", "feature_f35b"],["catalog_btn_tornado", "feature_tornado"],["catalog_btn_ea6b", "feature_ea6b"]];
+
+        map.putMultiple(array);
+
+
+        $(function () {
+            const tablab = $('.body .catalog_box .catalog_box_view label');
+            let box = $('.section_feature .box_feature');
+            let tabid = '';
+
+            tablab.click(function () {
+                tablab.removeClass('on');
+                $(this).addClass('on');
+                tabid = $(this).attr('id');
+                let divclass = map.get(tabid);
+                // console.log(divclass);
+                $(box).removeClass("selected");
+                $(box).css("display","none");
+                let query_text = ".section_feature .box_feature";
+                query_text = query_text + "." + divclass;
+                // console.log(query_text);
+
+                $(query_text).addClass("selected");
+                $(query_text).css("display","block");
+
+            });
+        });
+
         $('.misc_gallery').slick({
             dots: true,
             infinite: true,
@@ -1835,14 +1853,14 @@
         let body = document.querySelector(".body");
         let body_ch = body.clientHeight;
 
-        console.log(body_ch);
+        // console.log(body_ch);
 
         if (w >= 1024) {
             target = document.querySelector(".target");
             target_height_sub = body_ch * 0.7;
             target_height = body_ch - target_height_sub;
         } else {
-            target = document.querySelector(".footer");
+            target = document.querySelector(".footer_logo_img");
             target_height_sub = body_ch * 0.7;
             target_height = body_ch - target_height_sub;
         }
@@ -1883,7 +1901,7 @@
         window.addEventListener('scroll', function (e) {
             let scrollHeight = window.scrollY;
 
-            console.log(scrollHeight);
+            // console.log(scrollHeight);
 
             const rect = target.getBoundingClientRect();
 
@@ -1898,14 +1916,14 @@
             }
 
             if (isInViewport(target)) {
-                messageText = 'The box is visible in the viewport';
+                // messageText = 'The box is visible in the viewport';
                 moveTop("120px");
             } else {
-                messageText = 'The box is not visible in the viewport';
+                // messageText = 'The box is not visible in the viewport';
                 moveTop("15px");
             }
 
-            console.log(messageText);
+            // console.log(messageText);
         });
     </script>
 </body>
