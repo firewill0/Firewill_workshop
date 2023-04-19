@@ -121,8 +121,8 @@
                 </div>
                 <div class="profile_option_box">
                     <p class="profile_setting_title">웹 페이지 보기 모드</p>
-                    <label>페일 애저(브라이트)</label>
-                    <label>다크 블루(다크)</label>
+                    <label class="btn_color_paleazure">페일 애저(브라이트)</label>
+                    <label class="btn_color_darkblue">다크 블루(다크)</label>
                 </div>
             </div>
         </div>
@@ -423,15 +423,18 @@
                 newslab.removeClass('on');
                 $(this).addClass('on');
 
+
                 if ($(this).hasClass("btn_list")) {
                     // list
                     article.removeClass().addClass("box_news");
                     article.addClass("style_list");
-                } else if ($(this).hasClass("btn_grid")) {
+                }
+                if ($(this).hasClass("btn_grid")) {
                     // grid
                     article.removeClass().addClass("box_news");
                     article.addClass("style_grid");
-                } else {
+                }
+                if ($(this).hasClass("btn_square")) {
                     // square
                     article.removeClass().addClass("box_news");
                     article.addClass("style_square");
