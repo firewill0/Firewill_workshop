@@ -161,18 +161,18 @@
                 <label class="btn_news btn_square" for="tab_news_style_square">
                     <img src="../img/btn_news_sqaure_bright.png" alt="">
                 </label>
-                <select name="news_arrange" id="arrange_type">
-                    <option value="nothing">정렬 선택</option>
+                <select name="news_arrange" class="news_arrange" id="arrange_type">
+                    <option value="">정렬 선택</option>
                     <option value="latest_asc">최근 기사부터</option>
                     <option value="latest_desc">오래된 기사부터</option>
                     <option value="popular_asc">많이 본 기사부터</option>
                     <option value="popular_desc">적게 본 기사부터</option>
-                    <option value="popular_asc">추천많은 기사부터</option>
-                    <option value="popular_desc">추천적은 기사부터</option>
+                    <option value="suggest_asc">추천많은 기사부터</option>
+                    <option value="suggest_desc">추천적은 기사부터</option>
                 </select>
             </div>
             <div class="box_news style_list">
-                <a href="#" class="article change_color_outline">
+                <a href="#" data-date="20230325" data-watched="24" data-likes="5" class="article change_color_outline">
                     <div class="news_img">
                         <img src="../sub_news/img/news/news_1.jpg" alt="">
                     </div>
@@ -182,7 +182,7 @@
                         <p class="news_etc"><i class="fas fa-eye"></i>24 <i class="fas fa-thumbs-up"></i>5</p>
                     </div>
                 </a>
-                <a href="#" class="article change_color_outline">
+                <a href="#" data-date="20230324" data-watched="45" data-likes="8" class="article change_color_outline">
                     <div class="news_img">
                         <img src="../sub_news/img/news/news_2.jpg" alt="">
                     </div>
@@ -192,7 +192,8 @@
                         <p class="news_etc"><i class="fas fa-eye"></i>45 <i class="fas fa-thumbs-up"></i>8</p>
                     </div>
                 </a>
-                <a href="#" class="article change_color_outline">
+                <a href="#" data-date="20230323" data-watched="125" data-likes="15"
+                    class="article change_color_outline">
                     <div class="news_img">
                         <img src="../sub_news/img/news/news_3.jpg" alt="">
                     </div>
@@ -202,7 +203,7 @@
                         <p class="news_etc"><i class="fas fa-eye"></i>125 <i class="fas fa-thumbs-up"></i>15</p>
                     </div>
                 </a>
-                <a href="#" class="article change_color_outline">
+                <a href="#" data-date="20230322" data-watched="68" data-likes="3" class="article change_color_outline">
                     <div class="news_img">
                         <img src="../sub_news/img/news/news_4.jpg" alt="">
                     </div>
@@ -416,8 +417,68 @@
     <script src="../script/cookie/jquery.cookie.js"></script>
     <script>
         $(function () {
+
             const newslab = $('.body .section_news .box_news_options .btn_news');
             const article = $('.body .section_news .box_news');
+            const aligntab = $('.body .section_news .box_news_options .news_arrange');
+
+
+            aligntab.change(function () {
+                let value = $(this).val();
+                console.log(value);
+
+                if (value == 'latest_asc') {
+                    console.log('최신기사');
+                    article.append(function () {
+                        return $(this).children().sort(function (a, b) {
+                            return $(b).attr('data-date') - $(a).attr("data-date");
+                        });
+                    });
+                }
+                if (value == 'latest_desc') {
+                    console.log('오랜기사');
+                    article.append(function () {
+                        return $(this).children().sort(function (a, b) {
+                            return $(a).attr('data-date') - $(b).attr("data-date");
+                        });
+                    });
+                }
+                if (value == 'popular_asc') {
+                    console.log('많이본기사');
+                    article.append(function () {
+                        return $(this).children().sort(function (a, b) {
+                            return $(b).attr('data-watched') - $(a).attr(
+                            "data-watched");
+                        });
+                    });
+                }
+                if (value == 'popular_desc') {
+                    console.log('적게본기사');
+                    article.append(function () {
+                        return $(this).children().sort(function (a, b) {
+                            return $(a).attr('data-watched') - $(b).attr(
+                            "data-watched");
+                        });
+                    });
+                }
+                if (value == 'suggest_asc') {
+                    console.log('추천많은기사');
+                    article.append(function () {
+                        return $(this).children().sort(function (a, b) {
+                            return $(b).attr('data-likes') - $(a).attr("data-likes");
+                        });
+                    });
+                }
+                if (value == 'suggest_desc') {
+                    console.log('추천적은기사');
+                    article.append(function () {
+                        return $(this).children().sort(function (a, b) {
+                            return $(a).attr('data-likes') - $(b).attr("data-likes");
+                        });
+                    });
+                }
+
+            })
 
             newslab.click(function () {
                 newslab.removeClass('on');
