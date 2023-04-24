@@ -55,9 +55,6 @@
             $('.wing_menu_mobile').toggleClass('mobile_menu_on');
         });
 
-
-
-
         if ($.cookie('fw_color_mode') == undefined) {
             $.cookie('fw_color_mode', 'mode_paleazure', {
                 expires: 12,
