@@ -8,16 +8,12 @@ function top_control() {
     let body = document.querySelector(".body");
     let body_ch = body.clientHeight;
 
-    // console.log(body_ch);
-
     if (w >= 1024) {
         target = document.querySelector(".target");
         target_height_sub = body_ch * 0.7;
         target_height = body_ch - target_height_sub;
-        // target_height = 1200;
     } else {
-        target = document.querySelector(".footer");
-        // target_height = 900;
+        target = document.querySelector(".target");
         target_height_sub = body_ch * 0.7;
         target_height = body_ch - target_height_sub;
     }
