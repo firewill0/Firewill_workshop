@@ -5,6 +5,25 @@
     background-size: cover;
 }
 
+.devreport_img {
+    background-image: url("../sub_news/img/banner_devreport.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.gamenews_img {
+    background-image: url("../sub_news/img/banner_gamenews.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.miscnews_img {
+    background-image: url("../sub_news/img/banner_miscnews.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
 
 
 .section_news {
