@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/project.css">
     <link rel="stylesheet" href="/css/modnews.css">
+    <link rel="stylesheet" href="/css/article.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -136,96 +137,89 @@
             </label> <!-- btn_menu_mobile -->
         </div> <!-- header_mobile -->
 
-        <div class="visual_sub_banner">
-            <div class="visual_sub_banner_text">
-                <div class="visual_sub_banner_text_box change_color_box"></div>
-                <p class="change_color_txt"><a class="change_color_txt" href="/index.html"><i
-                            class="fas fa-home"></i></a> > 뉴스 > <a class="change_color_txt"
-                        href="/sub_news/devreport.html">개발 리포트</a> > <a class="change_color_txt"
-                        href="/sub_news/article_dev/report_c130.html">개발 리포트 #1 : C-130 자료 조사</a> </p>
-            </div>
-            <div class="visual_sub_banner_img devreport_img">
-                <p class="visual_sub_banner_img_title">NEWS</p>
-                <p class="visual_sub_banner_img_text">Don't miss the news</p>
-            </div>
-        </div>
 
-        <section class="section_news" id="body_id">
-            <p class="title_big change_color_txt_title">개발 리포트</p>
-            <div class="box_news_options">
-                <label class="btn_news btn_list on" for="tab_news_style_list">
-                    <img src="/img/btn_news_list_bright.png" alt="">
-                </label>
-                <label class="btn_news btn_grid" for="tab_news_style_grid">
-                    <img src="/img/btn_news_grid_bright.png" alt="">
-                </label>
-                <label class="btn_news btn_square" for="tab_news_style_square">
-                    <img src="/img/btn_news_sqaure_bright.png" alt="">
-                </label>
-                <select name="news_arrange" class="news_arrange" id="arrange_type">
-                    <option value="">정렬 선택</option>
-                    <option value="latest_asc">최근 기사부터</option>
-                    <option value="latest_desc">오래된 기사부터</option>
-                    <option value="popular_asc">많이 본 기사부터</option>
-                    <option value="popular_desc">적게 본 기사부터</option>
-                    <option value="suggest_asc">추천많은 기사부터</option>
-                    <option value="suggest_desc">추천적은 기사부터</option>
-                </select>
+        <section class="section_article" id="body_id">
+            <p class="title_article_main change_color_txt_title">개발 리포트 #1 : C-130 자료 조사</p>
+            <div class="visual_sub_banner_text">
+                <p class="change_color_txt"><a class="change_color_txt" href="/sub_news/devreport.html">개발 리포트</a> |
+                    2023-03-25</p>
             </div>
-            <div class="box_news style_list">
-                <a href="#" data-date="20230325" data-watched="24" data-likes="5" class="article change_color_outline">
-                    <div class="news_img">
-                        <img src="/sub_news/img/dev/c130e.jpg" alt="">
+            <div class="article_img c130_img"></div>
+            <div class="title_article_sub change_color_txt_title">
+                <p>C-130 Hercules Upgrade Project는 2023년에 출시할 예정인 모드들 중에 첫 번째로 출시될 모드로, C-130E부터 최신형 C-130J-30까지 다양한
+                    바리에이션의 허큘리스를 선보일 예정입니다. 이번 특집 기사에서는 C-130에 대한 간단한 소개와, HUP의 개발을 위해 어떠한 자료를 수집하고 준비했는지 알아보고자 합니다.</p>
+            </div>
+
+            <div class="article_tob">
+                <p>목차</p>
+                <p>역사</p>
+                <p>파생형 및 특징</p>
+                <p>자료 조사</p>
+            </div>
+
+            <div class="article_desc">
+                <p class="title_article_sub change_color_txt_title">C-130의 역사</p>
+                <p class="change_color_txt article_text">
+                    C-130은 미국의 록히드(現 록히드 마틴)에서 제작한, 제2차 세계대전 이후 현역으로 운용되고 있는, 미국 공군 최고의 장수만세 전술 수송기입니다. 장수 면에서 U-2,
+                    B-52를 능가할 전망의 군용기입니다.
+                    <br />
+                    <br />
+                    1954년에 첫 비행, 1957년 실전배치 이후 현재까지도 쓰이고 있으며, 이 분야에서 비슷하게 노익장을 과시하는 B-52처럼 아버지/ 아들/ 손자가 C-130을 탄다 할 정도로
+                    오랜
+                    기간 쓰이고 있는 점은 놀라운 사실일 것입니다. 하지만 더 무서운 점은 1970년대 이후 신규 제작이 없는 B-52와 달리 C-130은 아직도 신규모델이 개발/제작되고 있다는
+                    점입니다.
+                    <br />
+                    <br />
+                    <img class="article_img_in" src="/sub_news/img/dev/article_c130/1.jpg" alt="">
+                    C-130은 개발 당시엔 상당히 첨단 기종이였으며, 당시에는 아직 드물었던 여압 시스템과 냉난방 시설을 갖추었습니다.
+                    <br />
+                    <br />
+                    1956년 이글린 공군 기지에서 적합성을 테스트 받은 뒤, 극지에서의 가혹성과 화물 적재/투하 시험을 받았습니다. 1956년 12월 9일, 드디어 미 공군은 C-130을
+                    아드모어 공군기지에서 최초로 인수하였습니다.
+                    <br />
+                    <br />
+                    C-130은 개발 시기만 오래된 것이 아니라 개량형도 많아서 AC-130과 같은 화력지원기와 전자전에 특화된 EC-130 시리즈, 공중급유용인 KC-130, 기상관측용인
+                    WC-130 등도
+                    있습니다. 그리고 여타의 중/소형 군용수송기가 그렇듯 C-130 역시 민간용으로도 쓰이고 있다. 이렇듯 C-130은 2,300대 이상 생산되며 대성공을 거두었습니다.
+                </p>
+            </div>
+
+            <div class="article_desc">
+                <p class="title_article_sub change_color_txt_title">C-130의 파생형 및 형상 특징</p>
+                <p class="change_color_txt article_text">
+                    C-130은 1957년 실전 배치 이후 다양한 파생형이 개발되어 운용되었고, 2023년 현재도 다양한 파생형의 C-130이 곳곳에 사용되고 있습니다. 여기서는 각 파생형들의 눈에
+                    보이지 않는 특징들보단, 게임에서 직접적으로 플레이어에게 와닿는 <b>눈에 보이는 특징</b> 위주로 설명하겠습니다.
+                    <br />
+                    <br />
+                    <span>C-130A</span>
+                    <img class="article_img_in" src="/sub_news/img/dev/article_c130/c130a.jpg" alt="">
+
+                    최초 양산형인 C-130A는 최초 생산 시점의 형상과 이후의 형상에 서로 큰 차이가 있는데, 대표적으로 레이더의 추가로 인한 전방 레이돔 추가의 차이, 그리고 최초 모델은
+                    날개가 3장인 프로펠러를 사용했지만, 이후에는 개량되어 4장 프로펠러를 사용하였다는 점입니다.
+                    <br />
+                    <br />
+                    <div class="article_photo_in_box">
+                        <img class="article_img_in" src="/sub_news/img/dev/article_c130/c130a_1.jpg" alt="">
+                        <p class="img_in_text">1956년에 촬영된 최초의 C-130A(YC-130A) 사진<br/>
+                        기수의 형상에 주목.</p>
                     </div>
-                    <div class="news_desc">
-                        <p class="news_title">개발 리포트 #1 : C-130 자료 조사</p>
-                        <p class="news_date">2023-03-25</p>
-                        <p class="news_etc"><i class="fas fa-eye"></i>24 <i class="fas fa-thumbs-up"></i>5</p>
+                    <div class="article_photo_in_box">
+                        <img class="article_img_in" src="/sub_news/img/dev/article_c130/c130a_2.jpg" alt="">
+                        <p class="img_in_text">베트남전 당시 촬영된 C-130A 사진<br />
+                        기수의 형상에 주목.</p>
                     </div>
-                </a>
-                <a href="#" data-date="20230324" data-watched="45" data-likes="8" class="article change_color_outline">
-                    <div class="news_img">
-                        <img src="/sub_news/img/news/news_2.jpg" alt="">
-                    </div>
-                    <div class="news_desc">
-                        <p class="news_title">개발 리포트 : EA-6B 자료 조사</p>
-                        <p class="news_date">2023-03-24</p>
-                        <p class="news_etc"><i class="fas fa-eye"></i>45 <i class="fas fa-thumbs-up"></i>8</p>
-                    </div>
-                </a>
-                <a href="#" data-date="20230323" data-watched="125" data-likes="15"
-                    class="article change_color_outline">
-                    <div class="news_img">
-                        <img src="/sub_news/img/news/news_3.jpg" alt="">
-                    </div>
-                    <div class="news_desc">
-                        <p class="news_title">개발 리포트 : F-14 자료 조사</p>
-                        <p class="news_date">2023-03-23</p>
-                        <p class="news_etc"><i class="fas fa-eye"></i>125 <i class="fas fa-thumbs-up"></i>15</p>
-                    </div>
-                </a>
-                <a href="#" data-date="20230322" data-watched="68" data-likes="3" class="article change_color_outline">
-                    <div class="news_img">
-                        <img src="/sub_news/img/news/news_4.jpg" alt="">
-                    </div>
-                    <div class="news_desc">
-                        <p class="news_title">개발 리포트 : T-45C 자료 조사</p>
-                        <p class="news_date">2023-03-22</p>
-                        <p class="news_etc"><i class="fas fa-eye"></i>68 <i class="fas fa-thumbs-up"></i>3</p>
-                    </div>
-                </a>
+                    <br />
+                    <br />
+                    <span>C-130E</span>
+                    <img class="article_img_in" src="/sub_news/img/dev/article_c130/c130e1.jpg" alt="">
+
+                    A/B의 개선된 모델인 E형부터 날개 중앙부에 보조연료탱크 2개를 장착할 수 있게되었고, 그로 인해 외형적으로 큰 변화가 생겼습니다. 물론, 연료탱크를 제거하면 기존 A/B와 형상적으로 큰 차이가 없습니다.
+                    <br />
+                    <br />
+                </p>
             </div>
         </section>
-        <div class="pagenation change_color_outline target">
-            <a class="change_color_outline" href="#">
-                <<</a> <a class="change_color_outline" href="#">
-                    <</a> <a class="change_color_outline page_selected" href="#">1
-            </a>
-            <a class="change_color_outline" href="#">2</a>
-            <a class="change_color_outline" href="#">3</a>
-            <a class="change_color_outline" href="#">></a>
-            <a class="change_color_outline" href="#">>></a>
-        </div>
+
 
 
         <aside class="wing_menu_mobile">
@@ -416,96 +410,9 @@
     <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
     <script src="/script/control/page_control.js"></script>
     <script src="/script/control/hashmap_control.js"></script>
+    <script src="/script/cookie/jquery.cookie.js"></script>
     <script src="/script/control/top_control.js"></script>
     <script>
-        $(function () {
-
-            const newslab = $('.body .section_news .box_news_options .btn_news');
-            const article = $('.body .section_news .box_news');
-            const aligntab = $('.body .section_news .box_news_options .news_arrange');
-
-
-            aligntab.change(function () {
-                let value = $(this).val();
-                console.log(value);
-
-                if (value == 'latest_asc') {
-                    console.log('최신기사');
-                    article.append(function () {
-                        return $(this).children().sort(function (a, b) {
-                            return $(b).attr('data-date') - $(a).attr("data-date");
-                        });
-                    });
-                }
-                if (value == 'latest_desc') {
-                    console.log('오랜기사');
-                    article.append(function () {
-                        return $(this).children().sort(function (a, b) {
-                            return $(a).attr('data-date') - $(b).attr("data-date");
-                        });
-                    });
-                }
-                if (value == 'popular_asc') {
-                    console.log('많이본기사');
-                    article.append(function () {
-                        return $(this).children().sort(function (a, b) {
-                            return $(b).attr('data-watched') - $(a).attr(
-                            "data-watched");
-                        });
-                    });
-                }
-                if (value == 'popular_desc') {
-                    console.log('적게본기사');
-                    article.append(function () {
-                        return $(this).children().sort(function (a, b) {
-                            return $(a).attr('data-watched') - $(b).attr(
-                            "data-watched");
-                        });
-                    });
-                }
-                if (value == 'suggest_asc') {
-                    console.log('추천많은기사');
-                    article.append(function () {
-                        return $(this).children().sort(function (a, b) {
-                            return $(b).attr('data-likes') - $(a).attr("data-likes");
-                        });
-                    });
-                }
-                if (value == 'suggest_desc') {
-                    console.log('추천적은기사');
-                    article.append(function () {
-                        return $(this).children().sort(function (a, b) {
-                            return $(a).attr('data-likes') - $(b).attr("data-likes");
-                        });
-                    });
-                }
-
-            })
-
-            newslab.click(function () {
-                newslab.removeClass('on');
-                $(this).addClass('on');
-
-
-                if ($(this).hasClass("btn_list")) {
-                    // list
-                    article.removeClass().addClass("box_news");
-                    article.addClass("style_list");
-                }
-                if ($(this).hasClass("btn_grid")) {
-                    // grid
-                    article.removeClass().addClass("box_news");
-                    article.addClass("style_grid");
-                }
-                if ($(this).hasClass("btn_square")) {
-                    // square
-                    article.removeClass().addClass("box_news");
-                    article.addClass("style_square");
-                }
-
-            });
-        });
-
         top_control(); // execute top button control script 
     </script>
 </body>

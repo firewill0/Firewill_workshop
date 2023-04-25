@@ -1,0 +1,72 @@
+.section_article {
+    padding-top: 96px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+}
+
+
+.title_article_main {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.title_article_sub {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+
+.article_img {
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+    height: 512px;
+}
+
+.article_photo_in_box {
+    position: relative;
+}
+
+.article_img_in {
+    margin-bottom: 30px;
+}
+
+.article_photo_in_box .img_in_text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-left: 15px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+
+.c130_img {
+    background-image: url("../sub_news/img/dev/article_c130/c130e.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.article_tob {
+    margin-top: 45px;
+}
+
+.article_desc {
+    margin-top: 60px;
+}
+
+.article_tob a {
+    display: block;
+}
+
+.article_text {
+    line-height: 160%;
+}
