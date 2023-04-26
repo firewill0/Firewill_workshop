@@ -16,6 +16,8 @@
     font-weight: 400;
     margin-bottom: 15px;
     margin-top: 15px;
+    display: block;
+    padding-top: 45px;
 }
 
 
@@ -40,7 +42,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 75px;
+    height: 90px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding-left: 15px;
@@ -69,4 +71,63 @@
 
 .article_text {
     line-height: 160%;
+}
+
+.quick_tob {
+    position: absolute;
+    display: block;
+    width: 130px;
+    height: 160px;
+    line-height: 25px;
+    right: 15px;
+    top: 0;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.quick_tob .quick_tob_box {
+    width: 120px;
+    position: absolute;
+    left: 150px;
+    top: 30px;
+    background-color: #f0ffff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-left: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.quick_tob .tob_icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.quick_tob a p {
+    color: #001d3b;
+}
+
+.quick_tob a:hover p {
+    color: #89C4FF;
+}
+
+.quick_tob a.on p {
+    color: #0080FF;
+}
+
+.small_text {
+    font-size: 0.8rem;
+}
+
+@media all and (min-width:1269px) {
+    .section_article {
+        width: calc(1269px - 30px);
+        margin: 0 auto;
+    }
 }
