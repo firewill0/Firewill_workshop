@@ -5,6 +5,11 @@ $(function () {
     const tobA = $('.article_tob .article_tob_box a');
     const page = $('.section_article .article_box .article_desc');
     const tobBtn =  $('.tob_icon');
+    const stickTop = $('.stickTop');
+    const stickTopImg = $('.stickTop img');
+    const stickCenter = $('.stickCenter');
+    const stickBottom = $('.stickBottom');
+    const stickBottomImg = $('.stickBottom img');
 
     quick_tob.css('top', $(window).height() / 2 - quick_tob.height() / 2);
 
@@ -78,11 +83,19 @@ $(function () {
 
         if (tobBtn.hasClass('on')) {
             console.log('on');
-            tobBtn.attr('src','/img/tob_close.png');
+            stickTop.css('transform','rotate(31deg)');
+            stickCenter.css('opacity','0');
+            stickBottom.css('transform','rotate(-31deg)');
+            stickTopImg.attr('src','/img/stick_on.png');
+            stickBottomImg.attr('src','/img/stick_on.png');
             $('.quick_tob_box').css('left','15px');
         } else {
             console.log('not on');
-            tobBtn.attr('src','/img/tob.png');
+            stickTop.css('transform','rotate(0deg)');
+            stickCenter.css('opacity','1');
+            stickBottom.css('transform','rotate(0deg)');
+            stickTopImg.attr('src','/img/stick_off.png');
+            stickBottomImg.attr('src','/img/stick_off.png');
             $('.quick_tob_box').css('left','150px');
         }
     });

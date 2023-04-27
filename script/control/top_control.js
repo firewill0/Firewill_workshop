@@ -8,6 +8,13 @@ function top_control() {
     let body = document.querySelector(".body");
     let body_ch = body.clientHeight;
 
+    $('.btn_top').click(function (e) {
+        e.preventDefault();
+        $(window).scrollTo(this.hash || 0, {
+            duration: 500
+        });
+    })
+
     if (w >= 1024) {
         target = document.querySelector(".target");
         target_height_sub = body_ch * 0.7;

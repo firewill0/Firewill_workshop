@@ -105,8 +105,34 @@
     width: 30px;
     height: 30px;
     position: absolute;
+    background-color: #f0ffff;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
     right: 0;
     top: 0;
+}
+
+.stick {
+    width: calc(30px - 10px);
+    position: absolute;
+    left: 5px;  
+    top: 0;
+    transform-origin: 2px center;
+    transition: 0.5s;
+}
+
+.stickTop {
+    top: 4px;
+    /* transform:rotate(17deg); */
+}
+
+.stickCenter {
+    top: 12px;
+}
+
+.stickBottom {
+    top: 20px;
+    /* transform:rotate(-17deg); */
 }
 
 .quick_tob a p {

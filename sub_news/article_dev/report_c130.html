@@ -486,7 +486,11 @@
             <a href="#">TOP</a>
         </div>
         <div class="quick_tob">
-            <img class="tob_icon" src="/img/tob.png" alt="">
+            <div class="tob_icon">
+                <div class="stick stickTop"><img src="/img/stick_off.png" alt=""></div>
+                <div class="stick stickCenter"><img src="/img/stick_off.png" alt=""></div>
+                <div class="stick stickBottom"><img src="/img/stick_off.png" alt=""></div>
+            </div>
             <div class="quick_tob_box">
                 <p class="small_text">목차</p>
                 <a href="#article1">
@@ -507,12 +511,11 @@
     <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
     <script src="/script/control/jquery.scrollTo.min.js"></script>
     <script src="/script/control/page_control.js"></script>
-    <script src="/script/control/hashmap_control.js"></script>
     <script src="/script/cookie/jquery.cookie.js"></script>
     <script src="/script/control/top_control.js"></script>
     <script src="/script/control/quick_tob.js"></script>
     <script>
-        top_control(); // execute top button control script 
+        top_control(); // top 버튼 js
     </script>
 </body>
 

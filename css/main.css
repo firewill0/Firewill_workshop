@@ -29,6 +29,10 @@ html {
     border-color: #001d3b;
 }
 
+.text_const {
+    color: #001d3b;
+}
+
 li {
     list-style: none;
 }
@@ -603,77 +607,6 @@ label.btn_menu_mobile {
     display: block;
 }
 
-
-/* 
-#menu_mobile_news_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_news_m {
-    background-color: #0080FF;
-}
-
-#menu_mobile_news_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_news_m .menu_mobile_title i {
-    rotate: 180deg;
-}
-
-#menu_mobile_news_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_news_m .menu_mobile {
-    height: 155px;
-}
-
-#menu_mobile_news_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_news_m .menu_mobile_title>label {
-    display: block;
-}
-
-#menu_mobile_workshop_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_workshop_m {
-    background-color: #0080FF;
-}
-
-#menu_mobile_workshop_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_workshop_m .menu_mobile_title i {
-    rotate: 180deg;
-}
-
-#menu_mobile_workshop_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_workshop_m .menu_mobile {
-    height: 120px;
-}
-
-#menu_mobile_workshop_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_workshop_m .menu_mobile_title>label {
-    display: block;
-}
-
-#menu_mobile_download_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_download_m {
-    background-color: #0080FF;
-}
-
-#menu_mobile_download_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_download_m .menu_mobile_title i {
-    rotate: 180deg;
-}
-
-#menu_mobile_download_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_download_m .menu_mobile {
-    height: 120px;
-}
-
-#menu_mobile_download_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_download_m .menu_mobile_title>label {
-    display: block;
-}
-
-
-#menu_mobile_about_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_about_m {
-    background-color: #0080FF;
-}
-
-#menu_mobile_about_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_about_m .menu_mobile_title i {
-    rotate: 180deg;
-}
-
-#menu_mobile_about_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_about_m .menu_mobile {
-    height: 120px;
-}
-
-#menu_mobile_about_chk:checked~.wing_menu_mobile .box_menu_m_bottom .btn_menu_about_m .menu_mobile_title>label {
-    display: block;
-}
- */
-
-/* wing_menu_mobile end */
-
-
 .visual_banner_main {
     position: relative;
 }
@@ -800,9 +733,6 @@ label.btn_menu_mobile {
 
 .quick_cat_list>a {
     width: calc((100% - 60px)/3);
-    /* display: flex;
-    align-items: center; */
-    /* margin-bottom: 21px; */
 }
 
 .quick_cat_list>a:hover>img {
@@ -1338,6 +1268,3 @@ label.btn_menu_mobile {
 
 /* dark mode end */
 
-.text_const {
-    color: #001d3b;
-}
