@@ -70,8 +70,7 @@
 
         if ($.cookie('fw_color_mode') == undefined) {
             $.cookie('fw_color_mode', 'mode_paleazure', {
-                expires: 12,
-                path: '/'
+                expires: 12
             });
         }
         const mode_bright = 'mode_paleazure';
@@ -79,7 +78,8 @@
 
         if ($.cookie('fw_color_mode') == 'mode_paleazure') {
             $('.body').removeClass().addClass('body').addClass(mode_bright);
-        } else {
+        } 
+        if ($.cookie('fw_color_mode') == 'mode_darkblue') { 
             $('.body').removeClass().addClass('body').addClass(mode_dark);
         }
 

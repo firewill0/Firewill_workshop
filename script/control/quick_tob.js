@@ -86,16 +86,16 @@ $(function () {
             stickTop.css('transform','rotate(31deg)');
             stickCenter.css('opacity','0');
             stickBottom.css('transform','rotate(-31deg)');
-            stickTopImg.attr('src','/img/stick_on.png');
-            stickBottomImg.attr('src','/img/stick_on.png');
+            stickTopImg.attr('src','./img/stick_on.png');
+            stickBottomImg.attr('src','./img/stick_on.png');
             $('.quick_tob_box').css('left','15px');
         } else {
             console.log('not on');
             stickTop.css('transform','rotate(0deg)');
             stickCenter.css('opacity','1');
             stickBottom.css('transform','rotate(0deg)');
-            stickTopImg.attr('src','/img/stick_off.png');
-            stickBottomImg.attr('src','/img/stick_off.png');
+            stickTopImg.attr('src','./img/stick_off.png');
+            stickBottomImg.attr('src','./img/stick_off.png');
             $('.quick_tob_box').css('left','150px');
         }
     });
