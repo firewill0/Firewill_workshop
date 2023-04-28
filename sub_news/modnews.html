@@ -21,13 +21,7 @@
 </head>
 
 <body>
-    <input type="radio" name="tab_content_color" id="content_color_btn1" checked>
-    <input type="radio" name="tab_content_color" id="content_color_btn2">
-
-    <div class="body">
-        <input type="checkbox" name="" id="menu_mobile_chk">
-        <input type="checkbox" name="" id="menu_language_pc_chk">
-        <input type="checkbox" name="" id="menu_language_m_chk">
+    <div class="body mode_paleazure">
         <header class="header">
             <div class="logo_img_pc">
                 <a href="../index.html">
@@ -72,26 +66,24 @@
             </div>
         </header>
 
-        <input type="checkbox" name="" id="menu_setting_pc_chk">
-        <input type="checkbox" name="" id="menu_setting_m_chk">
         <div class="lnb_outer">
             <div class="lnb_pc">
                 <div class="menu_pc">
                     <div class="btn_menu_news">
                         <p class="stb">뉴스</p>
                         <div class="menu_pc_sub menu_pc_sub_news">
-                            <a href="../wip_page.html">게임 뉴스</a>
-                            <a href="../sub_news/modnews.html">모드 뉴스</a>
-                            <a href="../wip_page.html">개발 리포트</a>
-                            <a href="../wip_page.html">기타 뉴스</a>
+                            <a href="/sub_news/gamenews.html">게임 뉴스</a>
+                            <a href="/sub_news/modnews.html">모드 뉴스</a>
+                            <a href="/sub_news/devreport.html">개발 리포트</a>
+                            <a href="/sub_news/miscnews.html">기타 뉴스</a>
                         </div>
                     </div>
                     <div class="btn_menu_workshop">
                         <p class="stb">작업실</p>
                         <div class="menu_pc_sub menu_pc_sub_workshop">
-                            <a href="../sub_workshop/project.html">프로젝트</a>
-                            <a href="../wip_page.html">작업 보고</a>
-                            <a href="../wip_page.html">튜토리얼</a>
+                            <a href="/sub_workshop/project.html">프로젝트</a>
+                            <a href="/wip_page.html">작업 보고</a>
+                            <a href="/wip_page.html">튜토리얼</a>
                         </div>
                     </div>
                     <div class="btn_menu_forum">
@@ -102,17 +94,17 @@
                     <div class="btn_menu_download">
                         <p class="stb">다운로드</p>
                         <div class="menu_pc_sub menu_pc_sub_download">
-                            <a href="../wip_page.html">모드 다운로드</a>
-                            <a href="../wip_page.html">스킨 템플릿</a>
-                            <a href="../wip_page.html">월페이퍼</a>
+                            <a href="/wip_page.html">모드 다운로드</a>
+                            <a href="/wip_page.html">스킨 템플릿</a>
+                            <a href="/wip_page.html">월페이퍼</a>
                         </div>
                     </div>
                     <div class="btn_menu_about">
                         <p class="stb">소개</p>
                         <div class="menu_pc_sub menu_pc_sub_about">
-                            <a href="../wip_page.html">제작자 소개</a>
-                            <a href="../wip_page.html">팀원 소개</a>
-                            <a href="../wip_page.html">근황</a>
+                            <a href="/wip_page.html">제작자 소개</a>
+                            <a href="/wip_page.html">팀원 소개</a>
+                            <a href="/wip_page.html">근황</a>
                         </div>
                     </div>
                 </div>
@@ -129,8 +121,8 @@
                 </div>
                 <div class="profile_option_box">
                     <p class="profile_setting_title">웹 페이지 보기 모드</p>
-                    <label for="content_color_btn1">페일 애저(브라이트)</label>
-                    <label for="content_color_btn2">다크 블루(다크)</label>
+                    <label class="btn_color_paleazure">페일 애저(브라이트)</label>
+                    <label class="btn_color_darkblue">다크 블루(다크)</label>
                 </div>
             </div>
         </div>
@@ -139,11 +131,13 @@
             <a class="logo_img" href="../index.html">
                 <img src="../img/logo_dark.png" alt="">
             </a>
-            <label for="menu_mobile_chk" class="btn_menu_mobile">
-                <!-- <img src="./img/ham_bright.jpg" alt=""> -->
+            <label class="btn_menu_mobile">
                 <img class="img_btn_menu_mobile" alt="">
-            </label>
-        </div>
+                <div class="stickTop_menu_mobile stickMenu"></div>
+                <div class="stickCenter_menu_mobile stickMenu"></div>
+                <div class="stickBottom_menu_mobile stickMenu"></div>
+            </label> <!-- btn_menu_mobile -->
+        </div> <!-- header_mobile -->
 
         <div class="visual_sub_banner">
             <div class="visual_sub_banner_text">
@@ -158,32 +152,30 @@
             </div>
         </div>
 
-        <input type="radio" class="news_radio" name="tab_news_style" id="tab_news_style_list" checked>
-        <input type="radio" class="news_radio" name="tab_news_style" id="tab_news_style_grid">
-        <input type="radio" class="news_radio" name="tab_news_style" id="tab_news_style_square">
         <section class="section_news" id="body_id">
             <p class="title_big change_color_txt_title">모드 뉴스</p>
             <div class="box_news_options">
-                <label class="btn_news" for="tab_news_style_list">
+                <label class="btn_news btn_list on" for="tab_news_style_list">
                     <img src="../img/btn_news_list_bright.png" alt="">
                 </label>
-                <label class="btn_news" for="tab_news_style_grid">
+                <label class="btn_news btn_grid" for="tab_news_style_grid">
                     <img src="../img/btn_news_grid_bright.png" alt="">
                 </label>
-                <label class="btn_news" for="tab_news_style_square">
+                <label class="btn_news btn_square" for="tab_news_style_square">
                     <img src="../img/btn_news_sqaure_bright.png" alt="">
                 </label>
-                <select name="news_arrange" id="arrange_type">
+                <select name="news_arrange" class="news_arrange" id="arrange_type">
+                    <option value="">정렬 선택</option>
                     <option value="latest_asc">최근 기사부터</option>
                     <option value="latest_desc">오래된 기사부터</option>
                     <option value="popular_asc">많이 본 기사부터</option>
                     <option value="popular_desc">적게 본 기사부터</option>
-                    <option value="popular_asc">추천많은 기사부터</option>
-                    <option value="popular_desc">추천적은 기사부터</option>
+                    <option value="suggest_asc">추천많은 기사부터</option>
+                    <option value="suggest_desc">추천적은 기사부터</option>
                 </select>
             </div>
-            <div class="box_news">
-                <a href="#" class="article change_color_outline">
+            <div class="box_news style_list">
+                <a href="#" data-date="20230325" data-watched="24" data-likes="5" class="article change_color_outline">
                     <div class="news_img">
                         <img src="../sub_news/img/news/news_1.jpg" alt="">
                     </div>
@@ -193,7 +185,7 @@
                         <p class="news_etc"><i class="fas fa-eye"></i>24 <i class="fas fa-thumbs-up"></i>5</p>
                     </div>
                 </a>
-                <a href="#" class="article change_color_outline">
+                <a href="#" data-date="20230324" data-watched="45" data-likes="8" class="article change_color_outline">
                     <div class="news_img">
                         <img src="../sub_news/img/news/news_2.jpg" alt="">
                     </div>
@@ -203,7 +195,8 @@
                         <p class="news_etc"><i class="fas fa-eye"></i>45 <i class="fas fa-thumbs-up"></i>8</p>
                     </div>
                 </a>
-                <a href="#" class="article change_color_outline">
+                <a href="#" data-date="20230323" data-watched="125" data-likes="15"
+                    class="article change_color_outline">
                     <div class="news_img">
                         <img src="../sub_news/img/news/news_3.jpg" alt="">
                     </div>
@@ -213,7 +206,7 @@
                         <p class="news_etc"><i class="fas fa-eye"></i>125 <i class="fas fa-thumbs-up"></i>15</p>
                     </div>
                 </a>
-                <a href="#" class="article change_color_outline">
+                <a href="#" data-date="20230322" data-watched="68" data-likes="3" class="article change_color_outline">
                     <div class="news_img">
                         <img src="../sub_news/img/news/news_4.jpg" alt="">
                     </div>
@@ -237,37 +230,32 @@
         </div>
 
 
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_dummy_chk" checked>
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_news_chk">
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_workshop_chk">
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_download_chk">
-        <input type="radio" name="tab_menu_mobile" id="menu_mobile_about_chk">
         <aside class="wing_menu_mobile">
             <div class="box_menu_m_top">
                 <div class="box_menu_m_top_l">
                     <img class="img_profile_m" src="../img/profile_pic.png" alt="">
                     <p class="text_profile_m">Firewill</p>
-                </div>
+                </div> <!-- box_menu_m_top_l -->
                 <div class="box_menu_m_top_r">
                     <label class="btn_profile_setting_m btn_mobile" for="menu_setting_m_chk">
                         <img class="" src="../img/cogwheel_dark.png" alt="">
                     </label>
                     <img class="btn_logout_m btn_mobile" src="../img/logout_dark.png" alt="">
-                </div>
+                </div> <!-- box_menu_m_top_r -->
                 <div class="profile_option_box_m">
                     <p class="profile_setting_title">웹 페이지 보기 모드</p>
-                    <label for="content_color_btn1">페일 애저(브라이트)</label>
-                    <label for="content_color_btn2">다크 블루(다크)</label>
-                </div>
-            </div>
+                    <label class="btn_color_paleazure">페일 애저(브라이트)</label>
+                    <label class="btn_color_darkblue">다크 블루(다크)</label>
+                </div> <!-- profile_option_box_m -->
+            </div> <!-- box_menu_m_top -->
             <div class="box_menu_m_center">
-                <input class="search_m" type="search" name="" id="">
+                <input class="search_m" type="search" name="" id=""> <!-- search_m -->
                 <button class="btn_search_m" type="button">
                     <i class="fas fa-search"></i>
-                </button>
-                <label for="menu_language_m_chk" class="language_m btn_mobile">
+                </button> <!-- btn_search_m -->
+                <label class="language_m btn_mobile">
                     <img src="../img/globe_dark.png" alt="">
-                </label>
+                </label> <!-- language_m -->
                 <div class="box_language_m">
                     <a href="#">
                         <p class="text_const">한국어</p>
@@ -275,86 +263,80 @@
                     <a href="#">
                         <p class="text_const">English</p>
                     </a>
-                </div>
-            </div>
+                </div> <!-- box_language_m -->
+            </div> <!-- box_menu_m_center -->
             <div class="box_menu_m_bottom">
-                <label for="menu_mobile_news_chk" class="btn_menu_news_m btn_menu_m_common">
+                <div for="menu_mobile_news_chk" class="btn_menu_news_m btn_menu_m_common">
                     <div class="menu_mobile_title">
                         <p>뉴스</p>
                         <i class="fas fa-caret-down"></i>
-                        <label for="menu_mobile_dummy_chk"></label>
-                    </div>
+                    </div> <!-- menu_mobile_title -->
                     <div class="menu_mobile">
-                        <a href="../wip_page.html">게임 뉴스 <i class="fas fa-caret-right"></i></a>
-                        <a href="../sub_news/modnews.html">모드 뉴스 <i class="fas fa-caret-right"></i></a>
-                        <a href="../wip_page.html">기타 뉴스 <i class="fas fa-caret-right"></i></a>
-                        <a href="../wip_page.html">개발 리포트 <i class="fas fa-caret-right"></i></a>
-                    </div>
-                </label>
-                <label for="menu_mobile_workshop_chk" class="btn_menu_workshop_m btn_menu_m_common">
+                        <a href="/sub_news/gamenews.html">게임 뉴스 <i class="fas fa-caret-right"></i></a>
+                        <a href="/sub_news/modnews.html">모드 뉴스 <i class="fas fa-caret-right"></i></a>
+                        <a href="/sub_news/devreport.html">개발 리포트 <i class="fas fa-caret-right"></i></a>
+                        <a href="/sub_news/miscnews.html">기타 뉴스 <i class="fas fa-caret-right"></i></a>
+
+                    </div> <!-- menu_mobile -->
+                </div> <!-- btn_menu_news_m -->
+                <div for="menu_mobile_workshop_chk" class="btn_menu_workshop_m btn_menu_m_common">
                     <div class="menu_mobile_title">
                         <p>작업실</p>
                         <i class="fas fa-caret-down"></i>
-                        <label for="menu_mobile_dummy_chk"></label>
-                    </div>
+                    </div> <!-- menu_mobile_title -->
                     <div class="menu_mobile">
                         <a href="../sub_workshop/project.html">프로젝트 <i class="fas fa-caret-right"></i></a>
                         <a href="../wip_page.html">작업보고 <i class="fas fa-caret-right"></i></a>
                         <a href="../wip_page.html">튜토리얼 <i class="fas fa-caret-right"></i></a>
-                    </div>
-                </label>
-                <label for="menu_mobile_download_chk" class="btn_menu_download_m btn_menu_m_common">
+                    </div> <!-- menu_mobile -->
+                </div> <!-- btn_menu_workshop_m -->
+                <div for="menu_mobile_download_chk" class="btn_menu_download_m btn_menu_m_common">
                     <div class="menu_mobile_title">
                         <p>다운로드</p>
                         <i class="fas fa-caret-down"></i>
-                        <label for="menu_mobile_dummy_chk"></label>
-                    </div>
+                    </div> <!-- menu_mobile_title -->
                     <div class="menu_mobile">
                         <a href="../wip_page.html">모드 <i class="fas fa-caret-right"></i></a>
                         <a href="../wip_page.html">스킨 템플릿 <i class="fas fa-caret-right"></i></a>
                         <a href="../wip_page.html">월페이퍼 <i class="fas fa-caret-right"></i></a>
-                    </div>
-                </label>
-                <label for="menu_mobile_about_chk" class="btn_menu_about_m btn_menu_m_common">
+                    </div> <!-- menu_mobile -->
+                </div> <!-- btn_menu_download_m -->
+                <div for="menu_mobile_about_chk" class="btn_menu_about_m btn_menu_m_common">
                     <div class="menu_mobile_title">
                         <p>소개</p>
                         <i class="fas fa-caret-down"></i>
-                        <label for="menu_mobile_dummy_chk"></label>
-                    </div>
+                    </div> <!-- menu_mobile_title -->
                     <div class="menu_mobile">
                         <a href="../wip_page.html">제작자 소개 <i class="fas fa-caret-right"></i></a>
                         <a href="../wip_page.html">팀원 소개 <i class="fas fa-caret-right"></i></a>
                         <a href="../wip_page.html">기타 이야기 <i class="fas fa-caret-right"></i></a>
-                    </div>
-                </label>
+                    </div> <!-- menu_mobile -->
+                </div> <!-- btn_menu_about_m -->
                 <a class="btn_menu_m_common"
                     href="https://forums.bohemia.net/forums/topic/180959-firewill-standalone-series-release-thread/"
                     target="_blank">
                     <div class="btn_menu_forum_m">
                         <p>포럼</p>
                         <i class="fas fa-caret-right"></i>
-                    </div>
-                </a>
-            </div>
+                    </div> <!-- btn_menu_forum_m -->
+                </a> <!-- btn_menu_m_common -->
+            </div> <!-- box_menu_m_bottom -->
         </aside> <!-- wing_menu_mobile -->
 
-
-        <input type="checkbox" name="" id="footer_mobile_check">
-        <input type="checkbox" name="" id="sitemap_pc_check">
         <div class="footer_outer">
-            <footer class="footer">
+            <footer class="footer" id="footer_id">
                 <div class="footer_left">
-                    <div class="footer_logo_img">
+                    <div class="footer_logo_img target">
                         <img src="../img/logo_small_dark.png" alt="">
-                    </div>
+                    </div> <!-- footer_logo_img target -->
                     <p class="footer_copyright">Copyright ⓒ Firewill Workshop all rights reserved.</p>
-                </div>
+                </div> <!-- footer_left -->
 
                 <div class="footer_right">
                     <div class="footer_sns_mobile">
-                        <label for="footer_mobile_check" class="btn_footer_mobile">
-                            <img class="footer_mobile_open" src="../img/btn_bottom_open_dark.png" alt="">
-                        </label>
+                        <label class="btn_footer_mobile">
+                            <img class="footer_mobile_open" src="../img/btn_bottom_open_dark.png">
+                        </label> <!-- btn_footer_mobile -->
                         <div class="footer_sns_list">
                             <a href="https://github.com/firewill0/FIR_AWS_SystemDevelopment" target="_blank">
                                 <img src="../img/btn_github_bright.png" alt="">
@@ -362,28 +344,28 @@
                             <a href="https://discord.com/" target="_blank">
                                 <img src="../img/btn_discord_bright.png" alt="">
                             </a>
-                            <a href="line_invite.html" target="_blank">
+                            <a href="#" target="_blank">
                                 <img src="../img/btn_line_bright.png" alt="">
                             </a>
                             <a href="https://www.youtube.com/@firewill0" target="_blank">
                                 <img src="../img/btn_yt_bright.png" alt="">
                             </a>
-                            <label for="footer_mobile_check" class="btn_footer_mobile_close">
+                            <label for="footer_mobile_check" class="btn_footer_mobile btn_footer_mobile_close">
                                 <img class="footer_mobile_close" src="../img/btn_bottom_close_dark.png" alt="">
                             </label>
-                        </div>
-                    </div>
+                        </div> <!-- footer_sns_list -->
+                    </div> <!-- footer_sns_mobile -->
                     <div class="sitemap_pc">
-                        <label class="sitemap" for="sitemap_pc_check">
+                        <label class="sitemap">
                             <p>사이트맵</p>
-                        </label>
+                        </label> <!-- sitemap -->
                         <div class="sitemap_list">
                             <div>
                                 <p class="title_bold">뉴스</p>
-                                <a href="../wip_page.html">게임 뉴스</a>
-                                <a href="../sub_news/modnews.html">모드 뉴스</a>
-                                <a href="../wip_page.html">개발 리포트</a>
-                                <a href="../wip_page.html">기타 뉴스</a>
+                                <a href="/sub_news/gamenews.html">게임 뉴스</a>
+                                <a href="/sub_news/modnews.html">모드 뉴스</a>
+                                <a href="/sub_news/devreport.html">개발 리포트</a>
+                                <a href="/sub_news/miscnews.html">기타 뉴스</a>
                             </div>
                             <div>
                                 <p class="title_bold">작업실</p>
@@ -409,8 +391,8 @@
                                     <p class="title_bold">포럼</p>
                                 </a>
                             </div>
-                        </div>
-                    </div>
+                        </div> <!-- sitemap_list -->
+                    </div> <!-- sitemap_pc -->
                     <div class="footer_sns">
                         <a href="https://github.com/firewill0/FIR_AWS_SystemDevelopment" target="_blank">
                             <img src="../img/github_dark.png" alt="">
@@ -418,107 +400,30 @@
                         <a href="https://discord.com/" target="_blank">
                             <img src="../img/discord_dark.png" alt="">
                         </a>
-                        <a href="../line_invite.html" target="_blank">
+                        <a href="#" target="_blank">
                             <img src="../img/line_dark.png" alt="">
                         </a>
                         <a href="https://www.youtube.com/@firewill0" target="_blank">
                             <img src="../img/youtube_dark.png" alt="">
                         </a>
-                    </div>
-                </div>
-            </footer>
-        </div>
+                    </div> <!-- footer_sns -->
+                </div> <!-- footer_right -->
+            </footer> <!-- footer -->
+        </div> <!-- footer_outer -->
         <div class="btn_top" id="id_btn_top">
             <a href="#">TOP</a>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
-
+    <script src="/script/control/jquery.scrollTo.min.js"></script>
+    <script src="/script/control/page_control.js"></script>
+    <script src="/script/cookie/jquery.cookie.js"></script>
+    <script src="/script/control/top_control.js"></script>
+    <script src="/script/control/newsTab_control.js"></script>
     <script>
-
-        let top_btn = document.querySelector(".btn_top");
-        let target;
-        let target_height = 0;
-        let w = 0;
-        let target_height_sub = 0;
-        w = innerWidth;
-        let body = document.querySelector(".body");
-        let body_ch = body.clientHeight;
-
-        console.log(body_ch);
-
-        if (w >= 1024) {
-            target = document.querySelector(".target");
-            target_height_sub = body_ch * 0.7;
-            target_height = body_ch - target_height_sub;
-        } else {
-            target = document.querySelector(".footer");
-            target_height_sub = body_ch * 0.7;
-            target_height = body_ch - target_height_sub;
-        }
-
-        function toggle(display, opacity) {
-            top_btn.style.visibility = display;
-            top_btn.style.opacity = opacity;
-        }
-
-        function moveTop(value) {
-            top_btn.style.bottom = value;
-        }
-
-        function isInViewport(element) {
-            const rect = element.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-        window.addEventListener('resize', function (e) {
-            w = innerWidth;
-            body_ch = body.clientHeight;
-            if (w >= 1024) {
-                target = document.querySelector(".target");
-                target_height_sub = body_ch * 0.7;
-                target_height = body_ch - target_height_sub;
-            } else {
-                target = document.querySelector(".target");
-                target_height_sub = body_ch * 0.7;
-                target_height = body_ch - target_height_sub;
-            }
-        });
-
-        window.addEventListener('scroll', function (e) {
-            let scrollHeight = window.scrollY;
-
-            console.log(scrollHeight);
-
-            const rect = target.getBoundingClientRect();
-
-            // console.log(rect);
-
-            let messageText = '';
-
-            if (scrollHeight >= target_height) {
-                toggle("visible", 1);
-            } else {
-                toggle("hidden", 0);
-            }
-
-            if (isInViewport(target)) {
-                messageText = 'The box is visible in the viewport';
-                moveTop("120px");
-            } else {
-                messageText = 'The box is not visible in the viewport';
-                moveTop("15px");
-            }
-
-            console.log(messageText);
-        });
+        top_control(); // execute top button control script 
     </script>
 </body>
 

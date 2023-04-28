@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/modnews.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,42 +17,41 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
-
-    <title>Firewill Workshop</title>
+    <title>Misc News</title>
 </head>
 
 <body>
     <div class="body mode_paleazure">
         <header class="header">
             <div class="logo_img_pc">
-                <a href="./index.html">
+                <a href="../index.html">
                     <img alt="">
                 </a>
-            </div> <!-- logo_img_pc -->
+            </div>
             <div class="gnb">
                 <div class="btn_login">
                     <a href="#">
                         <p>로그인</p>
                     </a>
-                </div> <!-- btn_login -->
+                </div>
                 <div class="btn_logout">
                     <a href="#">
                         <p>로그아웃</p>
                     </a>
-                </div> <!-- btn_logout -->
+                </div>
                 <div class="btn_register">
                     <a href="#">
                         <p>회원가입</p>
                     </a>
-                </div> <!-- btn_register -->
+                </div>
                 <div class="box_search">
                     <input class="search" type="search" name="" id="">
                     <button class="btn_search" type="button">
                         <i class="fas fa-search"></i>
                     </button>
-                </div> <!-- box_search -->
+                </div>
                 <div class="btn_language_area">
-                    <label class="btn_language">
+                    <label class="btn_language" for="menu_language_pc_chk">
                         <img alt="">
                     </label>
                     <div class="box_language_pc">
@@ -61,9 +62,9 @@
                             <p class="text_const">English</p>
                         </a>
                     </div>
-                </div> <!-- btn_language_area -->
-            </div> <!-- gnb -->
-        </header> <!-- header -->
+                </div>
+            </div>
+        </header>
 
         <div class="lnb_outer">
             <div class="lnb_pc">
@@ -76,20 +77,20 @@
                             <a href="/sub_news/devreport.html">개발 리포트</a>
                             <a href="/sub_news/miscnews.html">기타 뉴스</a>
                         </div>
-                    </div> <!-- btn_menu_news -->
+                    </div>
                     <div class="btn_menu_workshop">
                         <p class="stb">작업실</p>
                         <div class="menu_pc_sub menu_pc_sub_workshop">
                             <a href="/sub_workshop/project.html">프로젝트</a>
-                            <a href="#">작업 보고</a>
-                            <a href="#">튜토리얼</a>
+                            <a href="/wip_page.html">작업 보고</a>
+                            <a href="/wip_page.html">튜토리얼</a>
                         </div>
-                    </div> <!-- btn_menu_workshop -->
+                    </div>
                     <div class="btn_menu_forum">
                         <a class="stb"
                             href="https://forums.bohemia.net/forums/topic/180959-firewill-standalone-series-release-thread/"
                             target="_blank">포럼</a>
-                    </div> <!-- btn_menu_forum -->
+                    </div>
                     <div class="btn_menu_download">
                         <p class="stb">다운로드</p>
                         <div class="menu_pc_sub menu_pc_sub_download">
@@ -97,7 +98,7 @@
                             <a href="/wip_page.html">스킨 템플릿</a>
                             <a href="/wip_page.html">월페이퍼</a>
                         </div>
-                    </div> <!-- btn_menu_download -->
+                    </div>
                     <div class="btn_menu_about">
                         <p class="stb">소개</p>
                         <div class="menu_pc_sub menu_pc_sub_about">
@@ -105,30 +106,30 @@
                             <a href="/wip_page.html">팀원 소개</a>
                             <a href="/wip_page.html">근황</a>
                         </div>
-                    </div> <!-- btn_menu_about -->
-                </div> <!-- menu_pc -->
+                    </div>
+                </div>
                 <div class="lnb_profile">
                     <div class="profile_img">
-                        <img src="./img/profile_pic.png" alt="">
+                        <img src="../img/profile_pic.png" alt="">
                     </div>
                     <div class="profile_text">
                         Firewill
                     </div>
                     <label class="profile_btn_setting" for="menu_setting_pc_chk">
-                        <img src="./img/cogwheel_dark.png" alt="">
+                        <img src="../img/cogwheel_dark.png" alt="">
                     </label>
-                </div> <!-- lnb_profile -->
+                </div>
                 <div class="profile_option_box">
                     <p class="profile_setting_title">웹 페이지 보기 모드</p>
                     <label class="btn_color_paleazure">페일 애저(브라이트)</label>
                     <label class="btn_color_darkblue">다크 블루(다크)</label>
-                </div> <!-- profile_option_box -->
-            </div> <!-- lnb_pc -->
-        </div> <!-- lnb_outer -->
+                </div>
+            </div>
+        </div>
 
         <div class="header_mobile">
-            <a class="logo_img" href="/index.html">
-                <img src="./img/logo_dark.png" alt="">
+            <a class="logo_img" href="../index.html">
+                <img src="../img/logo_dark.png" alt="">
             </a>
             <label class="btn_menu_mobile">
                 <img class="img_btn_menu_mobile" alt="">
@@ -138,131 +139,108 @@
             </label> <!-- btn_menu_mobile -->
         </div> <!-- header_mobile -->
 
-        <div class="visual_banner_main_wrap">
-            <div class="visual_banner_main">
-                <div><img src="./img/f14_ac2.jpg" alt=""></div>
-                <div><img src="./img/f15ex.jpg" alt=""></div>
-                <div><img src="./img/ea6b.jpg" alt=""></div>
-                <div><img src="./img/f16_1.jpg" alt=""></div>
-                <div><img src="./img/f22.jpg" alt=""></div>
-            </div> <!-- visual_banner_main -->
-            <div class="slick_control">
-                <button class="btn_play">Play</button>
-                <button class="btn_pause">Pause</button>
-            </div> <!-- slick_control -->
-        </div> <!-- visual_banner_main_wrap -->
+        <div class="visual_sub_banner">
+            <div class="visual_sub_banner_text">
+                <div class="visual_sub_banner_text_box change_color_box"></div>
+                <p class="change_color_txt"><a class="change_color_txt" href="../index.html"><i
+                            class="fas fa-home"></i></a> > 뉴스 > <a class="change_color_txt"
+                        href="/sub_news/miscnews.html">기타 뉴스</a></p>
+            </div>
+            <div class="visual_sub_banner_img miscnews_img">
+                <p class="visual_sub_banner_img_title">NEWS</p>
+                <p class="visual_sub_banner_img_text">Don't miss the news</p>
+            </div>
+        </div>
 
-        <section class="section_quick_cat section_style">
-            <div class="title_quick_cat title_big change_color_txt_title">자주찾는 카테고리</div>
-            <div class="quick_cat_list">
-                <a href="./sub_workshop/project.html">
-                    <img class="img_quick_cat" src="./img/quickmenu_news.jpg" alt="">
-                    <p class="text_quick_cat">프로젝트</p>
+        <section class="section_news" id="body_id">
+            <p class="title_big change_color_txt_title">기타 뉴스</p>
+            <div class="box_news_options">
+                <label class="btn_news btn_list on" for="tab_news_style_list">
+                    <img src="../img/btn_news_list_bright.png" alt="">
+                </label>
+                <label class="btn_news btn_grid" for="tab_news_style_grid">
+                    <img src="../img/btn_news_grid_bright.png" alt="">
+                </label>
+                <label class="btn_news btn_square" for="tab_news_style_square">
+                    <img src="../img/btn_news_sqaure_bright.png" alt="">
+                </label>
+                <select name="news_arrange" class="news_arrange" id="arrange_type">
+                    <option value="">정렬 선택</option>
+                    <option value="latest_asc">최근 기사부터</option>
+                    <option value="latest_desc">오래된 기사부터</option>
+                    <option value="popular_asc">많이 본 기사부터</option>
+                    <option value="popular_desc">적게 본 기사부터</option>
+                    <option value="suggest_asc">추천많은 기사부터</option>
+                    <option value="suggest_desc">추천적은 기사부터</option>
+                </select>
+            </div>
+            <div class="box_news style_list">
+                <a href="#" data-date="20230325" data-watched="24" data-likes="5" class="article change_color_outline">
+                    <div class="news_img">
+                        <img src="../sub_news/img/dev/c130e.jpg" alt="">
+                    </div>
+                    <div class="news_desc">
+                        <p class="news_title">개발 리포트 #1 : C-130 자료 조사</p>
+                        <p class="news_date">2023-03-25</p>
+                        <p class="news_etc"><i class="fas fa-eye"></i>24 <i class="fas fa-thumbs-up"></i>5</p>
+                    </div>
                 </a>
-                <a href="#">
-                    <img class="img_quick_cat" src="./img/quickmenu_wip.jpg" alt="">
-                    <p class="text_quick_cat">작업보고</p>
+                <a href="#" data-date="20230324" data-watched="45" data-likes="8" class="article change_color_outline">
+                    <div class="news_img">
+                        <img src="../sub_news/img/news/news_2.jpg" alt="">
+                    </div>
+                    <div class="news_desc">
+                        <p class="news_title">개발 리포트 : EA-6B 자료 조사</p>
+                        <p class="news_date">2023-03-24</p>
+                        <p class="news_etc"><i class="fas fa-eye"></i>45 <i class="fas fa-thumbs-up"></i>8</p>
+                    </div>
                 </a>
-                <a href="#">
-                    <img class="img_quick_cat" src="./img/quickmenu_tutoria.jpg" alt="">
-                    <p class="text_quick_cat">튜토리얼</p>
+                <a href="#" data-date="20230323" data-watched="125" data-likes="15"
+                    class="article change_color_outline">
+                    <div class="news_img">
+                        <img src="../sub_news/img/news/news_3.jpg" alt="">
+                    </div>
+                    <div class="news_desc">
+                        <p class="news_title">개발 리포트 : F-14 자료 조사</p>
+                        <p class="news_date">2023-03-23</p>
+                        <p class="news_etc"><i class="fas fa-eye"></i>125 <i class="fas fa-thumbs-up"></i>15</p>
+                    </div>
                 </a>
-            </div> <!-- quick_cat_list -->
-        </section> <!-- section_quick_cat -->
+                <a href="#" data-date="20230322" data-watched="68" data-likes="3" class="article change_color_outline">
+                    <div class="news_img">
+                        <img src="../sub_news/img/news/news_4.jpg" alt="">
+                    </div>
+                    <div class="news_desc">
+                        <p class="news_title">개발 리포트 : T-45C 자료 조사</p>
+                        <p class="news_date">2023-03-22</p>
+                        <p class="news_etc"><i class="fas fa-eye"></i>68 <i class="fas fa-thumbs-up"></i>3</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <div class="pagenation change_color_outline target">
+            <a class="change_color_outline" href="#">
+                <<</a> <a class="change_color_outline" href="#">
+                    <</a> <a class="change_color_outline page_selected" href="#">1
+            </a>
+            <a class="change_color_outline" href="#">2</a>
+            <a class="change_color_outline" href="#">3</a>
+            <a class="change_color_outline" href="#">></a>
+            <a class="change_color_outline" href="#">>></a>
+        </div>
 
-        <div class="wrap_content_main">
-            <div class="content_main_left">
-                <section class="section_popular section_style">
-                    <div class="title_popular title_big change_color_txt_title">인기 콘텐츠</div>
-                    <div class="popular_list">
-                        <a href="#">
-                            <img class="img_popular" src="./img/f16_2.jpg" alt="">
-                            <p class="text_popular">19만 구독자를 바라보는 F-16 모드, 미래에는?</p>
-                        </a>
-                        <a href="#">
-                            <img class="img_popular" src="./img/c130h_usaf_crop.jpg" alt="">
-                            <p class="text_popular">금주의 작업: C-130E USAF Euro One</p>
-                        </a>
-                        <a href="#">
-                            <img class="img_popular" src="./img/f15ex_2_cropped.jpg" alt="">
-                            <p class="text_popular">새로 나온 모드 - F-15EX Eagle II</p>
-                        </a>
-                        <a href="#">
-                            <img class="img_popular" src="./img/itgt.jpg" alt="">
-                            <p class="text_popular">튜토리얼 - I-TGT 사용법</p>
-                        </a>
-                    </div> <!-- popular_list -->
-                </section> <!-- section_popular -->
-
-                <section class="section_last_report section_style">
-                    <div class="title_last_report title_big change_color_txt_title">최신 작업 보고</div>
-                    <img class="img_last_report" src="./img/wip_c130h.jpg" alt="">
-                    <div class="last_report_desc">
-                        <p class="title_sub_last_report title_sub change_color_txt_title">금주의 작업 : C-130H 한국 공군 타입</p>
-                        <p class="text_last_report text_desc change_color_txt">이번 주의 작업 보고에서는 C-130H 한국 공군 사양에 대한 소개와
-                            작업한 결과에 대해서 다루고자
-                            합니다.
-                        </p>
-                        <a class="moreBtn" href="#">자세히 보기</a>
-                    </div> <!-- last_report_desc -->
-                </section> <!-- section_last_report -->
-            </div> <!-- content_main_left -->
-
-            <div class="content_main_right">
-                <section class="section_news_latest section_style">
-                    <div class="title_news_latest title_big change_color_txt_title">소식</div> <!-- title_news_latest -->
-                    <img class="img_news_latest" src="./img/f16_1.jpg" alt="">
-                    <div class="news_latest_desc">
-                        <p class="title_sub_news_latest title_sub change_color_txt">19만 구독자를 바라보는 F-16모드, 미래에는?</p>
-                        <a class="moreBtn" href="#">자세히 보기</a>
-                    </div> <!-- news_latest_desc -->
-
-                    <div class="title_news_more title_sub change_color_txt_title">관심가질 만한 소식</div>
-                    <div class="news_more_area">
-                        <a class="change_color_outline" href="#">
-                            <img class="img_news_more" src="./img/sumava.jpg" alt="">
-                            <div class="box_news_more">
-                                <p class="title_sub_news_more change_color_txt">신규 모드 지도, Sumava 출시</p>
-                                <p class="text_news_more text_small change_color_txt">게임 뉴스</p>
-                            </div>
-                        </a>
-                        <a class="change_color_outline" href="#">
-                            <img class="img_news_more" src="./img/update.jpg" alt="">
-                            <div class="box_news_more">
-                                <p class="title_sub_news_more change_color_txt">FIR AWS 업데이트 예정</p>
-                                <p class="text_news_more text_small change_color_txt">모드 뉴스</p>
-                            </div>
-                        </a>
-                        <a class="change_color_outline" href="#">
-                            <img class="img_news_more" src="./img/zomboid.jpg" alt="">
-                            <div class="box_news_more">
-                                <p class="title_sub_news_more change_color_txt">Playthrough : Project Zomboid</p>
-                                <p class="text_news_more text_small change_color_txt">기타 뉴스</p>
-                            </div>
-                        </a>
-                        <a class="change_color_outline" href="/sub_news/article_dev/report_c130.html">
-                            <img class="img_news_more" src="./img/c130e.jpg" alt="">
-                            <div class="box_news_more">
-                                <p class="title_sub_news_more change_color_txt">개발 리포트 #1 : C-130 자료 조사</p>
-                                <p class="text_news_more text_small change_color_txt" id="target">개발 리포트</p>
-                            </div>
-                        </a>
-                    </div> <!-- news_more_area -->
-                </section> <!-- section_news_latest -->
-            </div> <!-- content_main_right -->
-        </div> <!-- wrap_content_main -->
 
         <aside class="wing_menu_mobile">
             <div class="box_menu_m_top">
                 <div class="box_menu_m_top_l">
-                    <img class="img_profile_m" src="./img/profile_pic.png" alt="">
+                    <img class="img_profile_m" src="../img/profile_pic.png" alt="">
                     <p class="text_profile_m">Firewill</p>
                 </div> <!-- box_menu_m_top_l -->
                 <div class="box_menu_m_top_r">
                     <label class="btn_profile_setting_m btn_mobile" for="menu_setting_m_chk">
-                        <img class="" src="./img/cogwheel_dark.png" alt="">
+                        <img class="" src="../img/cogwheel_dark.png" alt="">
                     </label>
-                    <img class="btn_logout_m btn_mobile" src="./img/logout_dark.png" alt="">
+                    <img class="btn_logout_m btn_mobile" src="../img/logout_dark.png" alt="">
                 </div> <!-- box_menu_m_top_r -->
                 <div class="profile_option_box_m">
                     <p class="profile_setting_title">웹 페이지 보기 모드</p>
@@ -276,7 +254,7 @@
                     <i class="fas fa-search"></i>
                 </button> <!-- btn_search_m -->
                 <label class="language_m btn_mobile">
-                    <img src="./img/globe_dark.png" alt="">
+                    <img src="../img/globe_dark.png" alt="">
                 </label> <!-- language_m -->
                 <div class="box_language_m">
                     <a href="#">
@@ -348,7 +326,7 @@
             <footer class="footer" id="footer_id">
                 <div class="footer_left">
                     <div class="footer_logo_img target">
-                        <img src="./img/logo_small_dark.png" alt="">
+                        <img src="../img/logo_small_dark.png" alt="">
                     </div> <!-- footer_logo_img target -->
                     <p class="footer_copyright">Copyright ⓒ Firewill Workshop all rights reserved.</p>
                 </div> <!-- footer_left -->
@@ -356,23 +334,23 @@
                 <div class="footer_right">
                     <div class="footer_sns_mobile">
                         <label class="btn_footer_mobile">
-                            <img class="footer_mobile_open" src="./img/btn_bottom_open_dark.png">
+                            <img class="footer_mobile_open" src="../img/btn_bottom_open_dark.png">
                         </label> <!-- btn_footer_mobile -->
                         <div class="footer_sns_list">
                             <a href="https://github.com/firewill0/FIR_AWS_SystemDevelopment" target="_blank">
-                                <img src="./img/btn_github_bright.png" alt="">
+                                <img src="../img/btn_github_bright.png" alt="">
                             </a>
                             <a href="https://discord.com/" target="_blank">
-                                <img src="./img/btn_discord_bright.png" alt="">
+                                <img src="../img/btn_discord_bright.png" alt="">
                             </a>
                             <a href="#" target="_blank">
-                                <img src="./img/btn_line_bright.png" alt="">
+                                <img src="../img/btn_line_bright.png" alt="">
                             </a>
                             <a href="https://www.youtube.com/@firewill0" target="_blank">
-                                <img src="./img/btn_yt_bright.png" alt="">
+                                <img src="../img/btn_yt_bright.png" alt="">
                             </a>
                             <label for="footer_mobile_check" class="btn_footer_mobile btn_footer_mobile_close">
-                                <img class="footer_mobile_close" src="./img/btn_bottom_close_dark.png" alt="">
+                                <img class="footer_mobile_close" src="../img/btn_bottom_close_dark.png" alt="">
                             </label>
                         </div> <!-- footer_sns_list -->
                     </div> <!-- footer_sns_mobile -->
@@ -416,16 +394,16 @@
                     </div> <!-- sitemap_pc -->
                     <div class="footer_sns">
                         <a href="https://github.com/firewill0/FIR_AWS_SystemDevelopment" target="_blank">
-                            <img src="./img/github_dark.png" alt="">
+                            <img src="../img/github_dark.png" alt="">
                         </a>
                         <a href="https://discord.com/" target="_blank">
-                            <img src="./img/discord_dark.png" alt="">
+                            <img src="../img/discord_dark.png" alt="">
                         </a>
                         <a href="#" target="_blank">
-                            <img src="./img/line_dark.png" alt="">
+                            <img src="../img/line_dark.png" alt="">
                         </a>
                         <a href="https://www.youtube.com/@firewill0" target="_blank">
-                            <img src="./img/youtube_dark.png" alt="">
+                            <img src="../img/youtube_dark.png" alt="">
                         </a>
                     </div> <!-- footer_sns -->
                 </div> <!-- footer_right -->
@@ -433,34 +411,17 @@
         </div> <!-- footer_outer -->
         <div class="btn_top" id="id_btn_top">
             <a href="#">TOP</a>
-        </div> <!-- btn_top -->
-    </div> <!-- body -->
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
     <script src="/script/control/jquery.scrollTo.min.js"></script>
-    <script src="/script/cookie/jquery.cookie.js"></script>
     <script src="/script/control/page_control.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
-    </script>
-    <script src="./script/control/top_control.js"></script>
+    <script src="/script/cookie/jquery.cookie.js"></script>
+    <script src="/script/control/top_control.js"></script>
+    <script src="/script/control/newsTab_control.js"></script>
     <script>
-        $('.visual_banner_main').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            autoplay: true,
-            autoplaySpeed: 2000
-        });
-
-        $('.btn_pause').on('click', function () {
-            $('.visual_banner_main').slick('slickPause');
-        });
-
-        $('.btn_play').on('click', function () {
-            $('.visual_banner_main').slick('slickPlay');
-        });
-
         top_control(); // execute top button control script 
     </script>
 </body>
