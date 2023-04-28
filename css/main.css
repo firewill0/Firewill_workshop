@@ -410,17 +410,40 @@ label.btn_menu_mobile {
     width: 50px;
     display: block;
     float: right;
+    position: relative;
+    user-select: none;
 }
 
 .img_btn_menu_mobile {
-    content: url("../img/ham_bright.jpg");
+    content: url("../img/ham_back.jpg");
     transition: 0.3s;
 }
 
-
-.btn_menu_mobile.mobile_btn_on .img_btn_menu_mobile {
-    content: url("../img/ham_close_bright.jpg")
+.stickMenu {
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 32px;
+    height: 5px;
+    content: url("../img/stick_white.png");
+    user-select: none;
+    transform-origin: left center;
+    transition: 0.5s;
 }
+
+.stickTop_menu_mobile {
+    top: 12px;
+}
+
+.stickCenter_menu_mobile {
+    top: 22px;
+}
+
+.stickBottom_menu_mobile {
+    top: 32px;
+}
+
+
 
 /* wing_menu_mobile start */
 .wing_menu_mobile {
@@ -550,7 +573,7 @@ label.btn_menu_mobile {
     left: 0;
     top: 0;
     width: 260px;
-    height: 30px;   
+    height: 30px;
 }
 
 .btn_menu_forum_m {
@@ -945,7 +968,7 @@ label.btn_menu_mobile {
     color: #f0ffff;
 }
 
-.body .footer_outer .footer .footer_right .sitemap_pc .sitemap.sitemap_on~.sitemap_list  {
+.body .footer_outer .footer .footer_right .sitemap_pc .sitemap.sitemap_on~.sitemap_list {
     visibility: visible;
     opacity: 1;
     width: 600px;
@@ -1267,4 +1290,3 @@ label.btn_menu_mobile {
 }
 
 /* dark mode end */
-
